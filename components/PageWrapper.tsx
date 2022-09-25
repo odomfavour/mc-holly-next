@@ -1,15 +1,19 @@
-import React from 'react'
-import Footer from './Footer'
-import Header from './Header'
+import React from 'react';
+import Footer from './Footer';
+import Header from './Header';
 
-const PageWrapper = ({children}:any) => {
-  return (
-    <section>
-        <Header/>
-            {children}
-        <Footer/>
-    </section>
-  )
-}
+type Props = {
+	children: React.ReactNode;
+};
 
-export default PageWrapper
+const PageWrapper = ({ children }: Props) => {
+	return (
+		<section>
+			<Header />
+			{children}
+			<Footer />
+		</section>
+	);
+};
+
+export default PageWrapper;

@@ -33,40 +33,38 @@ const Accomodation = () => {
             {hotels.map((hotel) => {
               const { id, name, link, address, image, price } = hotel;
               return (
-                <div className="bg-white rounded-md" key={id}>
-                  <Image
-                    src={`${image.src}`}
-                    width={600}
-                    height={200}
-                    objectFit="cover"
-                    priority
-                    className="rounded-tr-md rounded-tl-md"
-                  />
-                  <div className="p-6">
-                    <h4 className="font-medium text-[18px]">{name}</h4>
-                    <p className="text-[14px] my-1">{address}</p>
-                    <p className="mb-2">
-                      <span className="text-[#821072]">₦{price}</span> avg/night
-                    </p>
+								<div className="bg-white rounded-md" key={id}>
+									<Image
+										src={`${image.src}`}
+										width={600}
+										height={200}
+										objectFit="cover"
+										priority
+										className="rounded-tr-md rounded-tl-md"
+									/>
+									<div className="p-6">
+										<h4 className="font-medium text-[18px]">{name}</h4>
+										<p className="text-[14px] my-1">{address}</p>
+										<p className="mb-2">
+											<span className="text-[#821072]">₦{price}</span> avg/night
+										</p>
 
-                    <div className="flex justify-between items-center">
-                      <Link href={link}>
-                        <p className="rounded-md flex items-center bg-[#2252CC] py-1 px-4  text-white cursor-pointer">
-                          Book <FaLink className="ml-2" />
-                        </p>
-                      </Link>
-                      <div className="flex items-center">
-                        <FaMapMarkerAlt className="text-[#2252CC]" />
-                        <Link href="#">
-                          <p className="underline text-[#2252CC] text-[14px] cursor-pointer">
-                            kjdfkjdfjkdf
-                          </p>
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              );
+										<div className="flex justify-between items-center">
+											<a href={link} target="_blank">
+												<p className="rounded-md flex items-center bg-[#2252CC] py-1 px-4  text-white cursor-pointer">
+													Book <FaLink className="ml-2" />
+												</p>
+											</a>
+											<div className="flex items-center">
+												<FaMapMarkerAlt className="text-[#2252CC]" />
+												<Link href="#">
+													<p className="text-[#2252CC] text-[14px]">Uyo, Akwa Ibom</p>
+												</Link>
+											</div>
+										</div>
+									</div>
+								</div>
+							);
             })}
             {/* <div className="bg-white rounded-md">
               <Image
