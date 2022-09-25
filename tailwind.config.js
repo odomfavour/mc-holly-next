@@ -5,7 +5,14 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage:  {
+        'hero-pattern': 'url(../public/header.png)',
+        'ticket1': 'url(../public/ticket-1.png)',
+        'ticket2': 'url(../public/ticket-2.png)',
+        'counter': 'rgba(255, 255, 255, 0.3)'
+      }
+    },
   },
   plugins: [],
 }
