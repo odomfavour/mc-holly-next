@@ -21,7 +21,7 @@
 /* custom classNames */
 @layer components {
     .headerLink {
-        @apply text-base font-semibold text-white transition duration-[.4s] hover:text-[#b3b3b3] pr-3
+        @apply text-base font-semibold transition duration-[.4s] hover:text-[#b3b3b3] md:border-r pr-5 border-[#FF8717]
     }
 
     .masonry {

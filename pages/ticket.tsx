@@ -3,8 +3,8 @@ import Head from "next/head";
 import Link from "next/link";
 import Footer from "../components/Footer";
 import Image from "next/image";
-import { FaArrowLeft } from "react-icons/fa";
-// import PageWrapper from "../components/PageWrapper";
+import PageWrapper from "../components/PageWrapper";
+import { tickets } from "../components/appData";
 
 const ticket: NextPage = () => {
   return (
@@ -20,60 +20,59 @@ const ticket: NextPage = () => {
         ></link>
       </Head>
 
-      <main>
-        <div className="flex md:flex-row flex-col min-h-screen">
-          <div className="md:w-1/3 w-full">
-            <div className="md:min-h-screen min-h-[200px] md:bg-ticket1 bg-ticket2 bg-center bg-contain"></div>
-          </div>
-          <div className="md:w-2/3 w-full">
-            <div className="w-4/5 mx-auto py-10">
-             <a href="/"> <div className="rounded-full p-3 bg-[#ccc] h-[60px] w-[60px] flex justify-center items-center cursor-pointer">
-                <FaArrowLeft />
-              </div>
-              </a>
-              <h3 className="text-[40px] mb-3 font-bold">TICKET PURCHASE</h3>
-              <p className="font-medium mb-4 font-[20px]">
-                Please select an option below
-              </p>
-              <section className="w-10/12 pb-16">
-                <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-8">
-                  <Image
-                    src="/regular-ticket.jpeg"
-                    layout="responsive"
-                    width={300}
-                    height={150}
-                  />
-                  <Image
-                    src="/premium-ticket.jpeg"
-                    layout="responsive"
-                    width={300}
-                    height={150}
-                  />
-                  <Image
-                    src="/vip-ticket.jpeg"
-                    layout="responsive"
-                    width={300}
-                    height={150}
-                  />
-                  <Image
-                    src="/executive-ticket.jpeg"
-                    layout="responsive"
-                    width={300}
-                    height={150}
-                  />
-                </div>
-              </section>
-              <div className="pt-4">
-                <a
-                  href=""
-                  className="px-[64px] py-[24px] border bg-[#287094] text-white mt-10"
-                >
-                  PURCHASE NOW
-                </a>
-              </div>
+      <PageWrapper>
+        <main className="mt-20">
+          <div className="flex lg:flex-row flex-col min-h-screen">
+            <div className="lg:w-1/3 md:w-full w-full lg:min-h-screen min-h-[200px] lg:bg-ticket1 bg-ticket2 bg-center bg-cover">
+              {/* <div className="lg:min-h-screen md:min-h-screen min-h-[200px] md:bg-ticket1 bg-ticket2 bg-center bg-cover"></div> */}
             </div>
+            <div className="lg:w-2/3 w-full bg-[#FFF4F4]">
+              <div className="w-4/5 mx-auto py-10">
+                <h3 className="text-[40px] mb-3 font-bold">TICKET PURCHASE</h3>
+                <p className="font-medium mb-4 font-[20px]">
+                  Please select an option below
+                </p>
+                <section className="pb-16">
+                  <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-8">
+                    {tickets.map((ticket) => {
+                      const { id, image, link, price } = ticket;
 
-            {/* <section className=" bg-[#F9F9F9] py-8">
+                      return (
+                        <div
+                          className="border border-[#999999] rounded-md bg-[#F9F9F9] p-[20px]"
+                          key={id}
+                        >
+                          <div className="image-box">
+                            <Image
+                              src={`${image.src}`}
+                              layout="responsive"
+                              width={300}
+                              height={150}
+                            />
+                          </div>
+                          <div className="info pt-3">
+                            <p className="font-medium text-2xl mb-5">
+                              ₦ {price}
+                            </p>
+                            <div>
+                              <a
+                                href={link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="px-[24px] py-[12px] border border-[#287094] text-[#287094]"
+                              >
+                                PURCHASE NOW
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </section>
+              </div>
+
+              {/* <section className=" bg-[#F9F9F9] py-8">
               <div className="w-4/5 mx-auto">
                 <div className="flex items-center gap-4">
                   <div className="form-group mb-4 w-1/6">
@@ -117,10 +116,10 @@ const ticket: NextPage = () => {
                 </div>
               </div>
             </section> */}
+            </div>
           </div>
-        </div>
-      </main>
-      <Footer />
+        </main>
+      </PageWrapper>
     </div>
   );
 };
