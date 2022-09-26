@@ -3,8 +3,11 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import { headerLinks } from "./appData";
+import { FaBars } from "react-icons/fa";
+import { useGlobalContext } from "../context/context";
 
 const Header = () => {
+ const {openMobileNav} = useGlobalContext()
   const [isScrolled, setIsScrolled] = useState(false);
   const router = useRouter();
 
@@ -60,6 +63,12 @@ const Header = () => {
               );
             })}
           </ul>
+          <div className="lg:hidden ">
+          <div className={`${
+                    router.pathname !== "/" && !isScrolled ? 'w-[48px] h-[48px] flex items-center justify-center bg-[#1306064c]  rounded-md' : 'w-[48px] h-[48px] bg-[#ffffff4c] flex items-center justify-center  rounded-md' }`} role="button" onClick={openMobileNav}>
+            <FaBars className="text-white"/>
+          </div>
+          </div>
         </div>
       </div>
     </header>

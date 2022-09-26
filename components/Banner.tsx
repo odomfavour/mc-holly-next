@@ -17,7 +17,7 @@ const Banner = () => {
         </p>
         <div className="lg:w-[35%] w-11/12 mx-auto mt-8 text-center">
           <div className="flex lg:flex-row flex-col-reverse justify-between text-center gap-6">
-            <div className="flex items-center justify-center md:justify-start">
+            <div className="flex items-center justify-center lg:justify-start">
               <BsFillCalendarFill className="text-[#FFFF40] text-xl mr-2" />
               <p className="md:text-xl text-base font-medium">
                 18TH NOVEMBER 2022
@@ -31,7 +31,9 @@ const Banner = () => {
             </div>
           </div>
           <p className="mt-5 mb-3 text-center">Event starts in</p>
-          <Countdown />
+          <div className="lg:w-full md:w-8/12 w-11/12 mx-auto">
+            <Countdown />
+          </div>
           <div className="mt-20 flex justify-center">
             <Link href="/ticket">
               <p className="flex items-center bg-[#942828] md:px-[64px] md:py-[24px] px-[32px] py-3 md:text-[18px] text-base cursor-pointer">

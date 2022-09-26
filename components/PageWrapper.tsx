@@ -1,6 +1,7 @@
 import React from "react"
 import Footer from "./Footer"
 import Header from "./Header"
+import MobileNav from "./MobileNav"
 
 type Props = {
   children: React.ReactNode
@@ -11,6 +12,7 @@ const PageWrapper = ({ children }: Props) => {
     <section>
       <Header />
       {children}
+      <MobileNav/>
       <Footer />
     </section>
   )
