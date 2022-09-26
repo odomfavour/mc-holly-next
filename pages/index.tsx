@@ -1,14 +1,14 @@
-import type { NextPage } from "next";
-import Head from "next/head";
+import type { NextPage } from "next"
+import Head from "next/head"
 // import Image from "next/image";
-import AboutEvent from "../components/AboutEvent";
-import AboutMc from "../components/AboutMc";
-import Accomodation from "../components/Accomodation";
-import Banner from "../components/Banner";
-import Gallery from "../components/Gallery";
-import PageWrapper from "../components/PageWrapper";
-import Sponsor from "../components/Sponsor";
-import Ticket from "../components/Ticket";
+import AboutEvent from "../components/AboutEvent"
+import AboutMc from "../components/AboutMc"
+import Accomodation from "../components/Accomodation"
+import Banner from "../components/Banner"
+import Gallery from "../components/Gallery"
+import PageWrapper from "../components/PageWrapper"
+import Sponsor from "../components/Sponsor"
+import Ticket from "../components/Ticket"
 
 const Home: NextPage = () => {
   return (
@@ -25,18 +25,18 @@ const Home: NextPage = () => {
       </Head>
 
       <PageWrapper>
-      <main>
-        <Banner />
-        <Sponsor/>
-        <Ticket/>
-        <AboutEvent/>
-        <AboutMc/>
-        <Accomodation/>
-        <Gallery/>
-      </main>
+        <main className="scroll-smooth">
+          <Banner />
+          <Sponsor />
+          <Ticket />
+          <AboutEvent />
+          <AboutMc />
+          <Accomodation />
+          <Gallery />
+        </main>
       </PageWrapper>
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

@@ -1,11 +1,16 @@
-import React from "react";
-import Image from "next/image";
+import React from "react"
+import Image from "next/image"
+import Link from "next/link"
+import { RiTicket2Fill } from "react-icons/ri"
+
 const Ticket = () => {
   return (
     <section className="bg-[#f29f1f33] min-h-screen pb-20">
       <div className="w-11/12 mx-auto">
         <div className="pt-20">
-          <h3 className="text-center mb-10 font-semibold md:text-5xl text-2xl">Ticket</h3>
+          <h3 className="text-center mb-10 font-semibold md:text-5xl text-2xl">
+            Ticket
+          </h3>
           <div className="flex gap-8 flex-col lg:flex-row">
             <div className="lg:w-1/3 w-full flex items-center justify-center">
               <Image
@@ -24,32 +29,51 @@ const Ticket = () => {
                   </p>
                   <h3 className="py-8 font-semibold text-2xl">₦ 5,000</h3>
                 </div> */}
-                <Image src="/regular-ticket.jpeg" layout="responsive" width={300} height={150} />
-                <Image src="/premium-ticket.jpeg" layout="responsive" width={300} height={150} />
-                <Image src="/vip-ticket.jpeg" layout="responsive" width={300} height={150} />
-                <Image src="/executive-ticket.jpeg" layout="responsive" width={300} height={150} />
-                
+                <Image
+                  src="/regular-ticket.jpeg"
+                  layout="responsive"
+                  width={300}
+                  height={150}
+                />
+                <Image
+                  src="/premium-ticket.jpeg"
+                  layout="responsive"
+                  width={300}
+                  height={150}
+                />
+                <Image
+                  src="/vip-ticket.jpeg"
+                  layout="responsive"
+                  width={300}
+                  height={150}
+                />
+                <Image
+                  src="/executive-ticket.jpeg"
+                  layout="responsive"
+                  width={300}
+                  height={150}
+                />
 
-                <div className="bg-white text-center rounded text-[#9A073C]">
-                  {/* <p className="border-b border-[#BBB5B0] py-3 text-base font-medium">
+                {/* <div className="bg-white text-center rounded text-[#9A073C]">
+                  <p className="border-b border-[#BBB5B0] py-3 text-base font-medium">
                     VIP
                   </p>
-                  <h3 className="py-8 font-semibold text-2xl">₦ 5,000</h3> */}
+                  <h3 className="py-8 font-semibold text-2xl">₦ 5,000</h3>
                 </div>
                 <div className="bg-white text-center rounded text-[#DF6800]">
-                  {/* <p className="border-b border-[#BBB5B0] py-3 text-base font-medium">
+                  <p className="border-b border-[#BBB5B0] py-3 text-base font-medium">
                     Table for 10
                     </p>
-                <h3 className="py-8 font-semibold text-2xl">₦ 500,000</h3> */}
+                <h3 className="py-8 font-semibold text-2xl">₦ 500,000</h3>
                 </div>
                 <div className="bg-white text-center rounded text-[#2252CC]">
-                  {/* <p className="border-b border-[#BBB5B0] py-3 text-base font-medium">
+                  <p className="border-b border-[#BBB5B0] py-3 text-base font-medium">
                     Table for 4
                   </p>
-                  <h3 className="py-8 font-semibold text-2xl">₦ 1,000,000</h3> */}
+                  <h3 className="py-8 font-semibold text-2xl">₦ 1,000,000</h3>
                 </div>
               </div>
-              {/* <div className="rounded bg-white p-5 mt-8">
+              <div className="rounded bg-white p-5 mt-8">
                 <div className="flex items-center">
                   <h3 className="mr-2 text-[32px] font-medium">₦ 5,000</h3>
                   <p className="text-[18px]">Regular </p>
@@ -58,14 +82,21 @@ const Ticket = () => {
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Congue aliquam nisl, eget risus.{" "}
                 </p>
-                <div className="h-[120px] bg-[#D9D9D9] mt-4"></div>
-              </div> */}
+                <div className="h-[120px] bg-[#D9D9D9] mt-4"></div> */}
+              </div>
             </div>
+          </div>
+          <div className="flex justify-center mt-14">
+            <Link href="/ticket">
+              <div className="flex items-center bg-transparent border-2 border-[#942828] md:px-[64px] md:py-[24px] px-[32px] py-3 md:text-[18px] text-base cursor-pointer hover:bg-[#942828] hover:text-white outline-ticket-btn">
+                BUY TICKETS NOW
+              </div>
+            </Link>
           </div>
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Ticket;
+export default Ticket
