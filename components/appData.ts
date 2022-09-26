@@ -129,7 +129,7 @@ export const headerLinks = [
   {
       id: 2,
       name: 'Sponsor',
-      url: '/#sponsor',
+      url: '/#sponsors',
   },
   {
       id: 3,
