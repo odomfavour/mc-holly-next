@@ -1,7 +1,7 @@
-import Link from "next/link";
-import React from "react";
-import { gallery } from "./appData";
-import Image from "next/image";
+import Link from "next/link"
+import React from "react"
+import { gallery, gallery1 } from "./appData"
+import Image from "next/image"
 
 const Gallery = () => {
   return (
@@ -12,29 +12,31 @@ const Gallery = () => {
         </div>
         <div className="mt-10">
           <div className="flex lg:flex-row flex-col justify-between">
-            <div className="lg:w-5/12 w-full ">
+            <div className="lg:w-[47%] w-full ">
               <div className="bg-[#F7F7F7] rounded-xl">
                 <div className="p-4">
-                  <div className="masonry mb-3">
+                  <div className="mb-3 columns-3">
                     {gallery.map((item) => {
-                      const { image, id, title } = item;
+                      const { image, id, title } = item
                       return (
-                        <div className="h-[200px] mb-3" key={id}>
-                          {/* <Image
-                    src={`${image.src}`}
-                    width={319}
-                    height={165}
-                    objectFit="cover"
-                    priority
-                    className="rounded-tr-md rounded-tl-md"
-                  /> */}
-                          <img
+                        <div
+                          className="relative min-h-[140px] mb-3 break-inside-avoid"
+                          key={id}
+                        >
+                          <Image
+                            src={`${image.src}`}
+                            objectFit="cover"
+                            layout="fill"
+                            priority
+                            className="rounded-tr-md rounded-tl-md object-top hover:scale-110 transition-all duration-150 ease-out delay-50"
+                          />
+                          {/* <img
                             src={`${image.src}`}
                             alt=""
                             className="w-full h-[200px] object-cover object-center"
-                          />
+                          /> */}
                         </div>
-                      );
+                      )
                     })}
                   </div>
                 </div>
@@ -44,33 +46,34 @@ const Gallery = () => {
                 </div>
               </div>
             </div>
-            <div className="lg:w-5/12 w-full">
+            <div className="lg:w-[47%] w-full">
               <div className="bg-[#F7F7F7] rounded-xl">
                 <div className="p-4">
-                <div className="masonry mb-3">
-                    {gallery.map((item) => {
-                      const { image, id, title } = item;
+                  <div className="mb-3 columns-3">
+                    {gallery1.map((item) => {
+                      const { image, id, title } = item
                       return (
-                        <div className="h-[200px] mb-3" key={id}>
-                          {/* <Image
-                    src={`${image.src}`}
-                    width={319}
-                    height={165}
-                    objectFit="cover"
-                    priority
-                    className="rounded-tr-md rounded-tl-md"
-                  /> */}
-                          <img
+                        <div
+                          className="relative min-h-[140px] mb-3 break-inside-avoid"
+                          key={id}
+                        >
+                          <Image
+                            src={`${image.src}`}
+                            objectFit="cover"
+                            layout="fill"
+                            priority
+                            className="rounded-tr-md rounded-tl-md object-center hover:scale-110 transition-all duration-150 ease-out delay-50"
+                          />
+                          {/* <img
                             src={`${image.src}`}
                             alt=""
                             className="w-full h-[200px] object-cover object-center"
-                          />
+                          /> */}
                         </div>
-                      );
+                      )
                     })}
                   </div>
                 </div>
-
                 <div className="bg-white p-9 rounded-bl-xl rounded-br-xl">
                   <h3 className="text-center">MC Holly event 2022</h3>
                 </div>
@@ -86,7 +89,7 @@ const Gallery = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Gallery;
+export default Gallery

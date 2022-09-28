@@ -10,6 +10,10 @@ import pic1 from "../public/gallery/2021/pic-1.png"
 import pic2 from "../public/gallery/2021/pic-2.png"
 import pic3 from "../public/gallery/2021/pic-3.png"
 import pic4 from "../public/gallery/2021/pic-4.png"
+import pic11 from "../public/gallery/2022/pic-1.png"
+import pic22 from "../public/gallery/2022/pic-2.png"
+import pic33 from "../public/gallery/2022/pic-3.png"
+import pic44 from "../public/gallery/2022/pic-4.png"
 
 // tickets
 
@@ -91,29 +95,138 @@ export const gallery = [
     image: pic4,
     title: "",
   },
+  {
+    id: 5,
+    image: pic2,
+    title: "",
+  },
+  {
+    id: 6,
+    image: pic3,
+    title: "",
+  },
+]
+export const gallery1 = [
+  {
+    id: 1,
+    image: pic11,
+    title: "",
+  },
+  {
+    id: 2,
+    image: pic22,
+    title: "",
+  },
+  {
+    id: 3,
+    image: pic33,
+    title: "",
+  },
+  {
+    id: 4,
+    image: pic44,
+    title: "",
+  },
+  {
+    id: 5,
+    image: pic22,
+    title: "",
+  },
+  {
+    id: 6,
+    image: pic33,
+    title: "",
+  },
+]
+
+export const mainGal1 = [
+  {
+    id: 1,
+    image: pic11,
+    title: "",
+  },
+  {
+    id: 2,
+    image: pic22,
+    title: "",
+  },
+  {
+    id: 3,
+    image: pic33,
+    title: "",
+  },
+  {
+    id: 4,
+    image: pic44,
+    title: "",
+  },
+  {
+    id: 5,
+    image: pic22,
+    title: "",
+  },
+  {
+    id: 6,
+    image: pic33,
+    title: "",
+  },
+  {
+    id: 7,
+    image: pic1,
+    title: "",
+  },
+  {
+    id: 8,
+    image: pic2,
+    title: "",
+  },
+  {
+    id: 9,
+    image: pic3,
+    title: "",
+  },
+  {
+    id: 10,
+    image: pic4,
+    title: "",
+  },
+  {
+    id: 11,
+    image: pic2,
+    title: "",
+  },
+  {
+    id: 12,
+    image: pic3,
+    title: "",
+  },
 ]
 
 export const tickets = [
   {
       id: 1,
+      name: 'regular',
       image: regularTicket,
       link: 'https://paystack.com/buy/hollys-era-regular-telopi',
       price: '3,000'
   },
   {
       id: 2,
+      name: 'vip',
       image: vipTicket,
       link: 'https://paystack.com/buy/hollys-era-vip-axmjdz',
       price: '10,000'
   },
   {
       id: 3,
+      name: 'executive',
       image: executiveTicket,
       link: 'https://paystack.com/buy/hollys-era-exclusive-pfwjwd',
       price: '300,000'
   },
   {
       id: 4,
+      name: 'premium',
       image: premiumTicket,
       link: 'https://paystack.com/buy/hollys-era-premium-dymuaj',
       price: '600,000'
