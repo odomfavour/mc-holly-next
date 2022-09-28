@@ -1,10 +1,10 @@
-import type { NextPage } from "next";
-import Head from "next/head";
-import Link from "next/link";
-import Footer from "../components/Footer";
-import Image from "next/image";
-import PageWrapper from "../components/PageWrapper";
-import { tickets } from "../components/appData";
+import type { NextPage } from "next"
+import Head from "next/head"
+import Link from "next/link"
+import Footer from "../components/Footer"
+import Image from "next/image"
+import PageWrapper from "../components/PageWrapper"
+import { tickets } from "../components/appData"
 
 const ticket: NextPage = () => {
   return (
@@ -33,40 +33,42 @@ const ticket: NextPage = () => {
                   Please select an option below
                 </p>
                 <section className="pb-16">
-                  <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-8">
+                  <div className="grid lg:grid-cols-1 md:grid-cols-1 grid-cols-1 gap-8">
                     {tickets.map((ticket) => {
-                      const { id, image, link, price } = ticket;
+                      const {name, id, image, link, price } = ticket
 
                       return (
                         <div
-                          className="border border-[#999999] rounded-md bg-[#F9F9F9] p-[20px]"
+                          className={`${name ==='regular' ? 'border border-[#CACACA] rounded-md bg-[#D8C9AC7F] p-[20px]': name === 'vip' ? 'border border-[#CACACA] rounded-md  p-[20px]  bg-[#A6689733]' : name === 'executive' ? 'border border-[#CACACA] rounded-md  p-[20px]  bg-[#E5E6E8]': 'border border-[#CACACA] rounded-md  p-[20px] bg-[#CBE6D37F]'}`}
                           key={id}
                         >
-                          <div className="image-box">
-                            <Image
-                              src={`${image.src}`}
-                              layout="responsive"
-                              width={300}
-                              height={150}
-                            />
-                          </div>
-                          <div className="info pt-3">
-                            <p className="font-medium text-2xl mb-5">
+                          <div className="grid lg:grid-cols-3 md:grid-cols-1 grid-cols-1 lg:gap-8 gap-5 items-center">
+                            <div className="image-box">
+                              <Image
+                                src={`${image.src}`}
+                                layout="responsive"
+                                width={300}
+                                height={150}
+                              />
+                            </div>
+                            <p className={`${name ==='regular' ? 'font-semibold text-[32px] text-center text-[#563E25]': name === 'vip' ? 'font-semibold text-[32px] text-center text-[#40263A]' : name === 'executive' ? 'font-semibold text-[32px] text-center text-[#57585A]': 'font-semibold text-[32px] text-center text-[#326742]'}`}>
                               ₦ {price}
                             </p>
-                            <div>
-                              <a
-                                href={link}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="px-[24px] py-[12px] border border-[#287094] text-[#287094]"
-                              >
-                                PURCHASE NOW
-                              </a>
+                            <div className="info flex items-center justify-center mb-3 lg:mb-0">
+                              <div>
+                                <a
+                                  href={link}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="px-[24px] py-[12px] border border-[#287094] text-[#287094] rounded-md"
+                                >
+                                  PURCHASE NOW
+                                </a>
+                              </div>
                             </div>
                           </div>
                         </div>
-                      );
+                      )
                     })}
                   </div>
                 </section>
@@ -121,7 +123,7 @@ const ticket: NextPage = () => {
         </main>
       </PageWrapper>
     </div>
-  );
-};
+  )
+}
 
-export default ticket;
+export default ticket

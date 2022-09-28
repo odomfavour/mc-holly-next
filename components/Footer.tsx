@@ -17,27 +17,27 @@ const Footer = () => {
   return (
     <section className="py-10">
       <div className="w-11/12 mx-auto">
-        <ul className="md:space-x-4 space-y-4 md:space-y-0 md:flex md:mx-auto justify-center mb-14">
-          <li className="md:border-r pr-3 border-[#FF8717]">
+        <ul className="lg:space-x-4 space-y-4 md:space-y-0 lg:flex md:mx-auto justify-center mb-14">
+          <li className="lg:border-r pr-3 border-[#FF8717]">
             <Link href="/">Home</Link>
           </li>
-          <li className="md:border-r pr-3 border-[#FF8717]" >
-            <Link href="/">Sponsors</Link>
+          <li className="lg:border-r pr-3 border-[#FF8717]" >
+            <Link href="/#sponsors">Sponsors</Link>
           </li>
-          <li className="md:border-r pr-3 border-[#FF8717]">
-            <Link href="/">Tickets</Link>
+          <li className="lg:border-r pr-3 border-[#FF8717]">
+            <Link href="/ticket">Tickets</Link>
           </li>
-          <li className="md:border-r pr-3 border-[#FF8717]">
-            <Link href="/">About event</Link>
+          <li className="lg:border-r pr-3 border-[#FF8717]">
+            <Link href="/#aboutEvent">About event</Link>
           </li>
-          <li className="md:border-r pr-3 border-[#FF8717]">
-            <Link href="/">About MCHolly</Link>
+          <li className="lg:border-r pr-3 border-[#FF8717]">
+            <Link href="/#aboutMC">About MCHolly</Link>
           </li>
-          <li className="md:border-r pr-3 border-[#FF8717]">
-            <Link href="/">Accomodation</Link>
+          <li className="lg:border-r pr-3 border-[#FF8717]">
+            <Link href="/#accomodation">Accomodation</Link>
           </li>
           <li>
-            <Link href="/">Gallery</Link>
+            <Link href="/gallery">Gallery</Link>
           </li>
         </ul>
         <div className="flex flex-col-reverse gap-8 md:flex-row lg:flex-row items-center">
