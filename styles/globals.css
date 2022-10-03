@@ -9,11 +9,11 @@
     }
 
     header {
-        @apply fixed top-0  z-50 w-full transition-all lg:py-6
+        @apply fixed top-0  z-50 w-full transition-all lg:py-1 lg:pt-3
     }
 
     .header-inner {
-        @apply flex items-center justify-between  py-3
+        @apply flex items-center justify-between  py-1
     }
 }
 
@@ -35,5 +35,3 @@
         }
     }
 }
-
-
