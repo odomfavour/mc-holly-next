@@ -18,6 +18,7 @@ const Ticket = () => {
                 width="583px"
                 height="443px"
                 className="w-full"
+                priority
               />
             </div>
             <div className="lg:w-2/3 w-full">
@@ -32,6 +33,7 @@ const Ticket = () => {
                       width={300}
                       height={150}
                       key={id}
+                      priority
                     />
                   )
                 })}

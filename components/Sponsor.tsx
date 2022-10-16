@@ -88,6 +88,7 @@ const Sponsor = () => {
                       width="100px"
                       height="100px"
                       objectFit="contain"
+                      priority
                     />
                   </div>
                 </SwiperSlide>

@@ -12,8 +12,8 @@ const Banner = () => {
       <div className="pt-24">
         <h3 className="lg:text-8xl text-2xl text-center">HOLLY’S ERA 3</h3>
         <p className="text-center md:w-2/6 w-10/12 mx-auto text-base">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue
-          aliquam nisl, eget risus. Id sapien amet.
+          {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue
+          aliquam nisl, eget risus. Id sapien amet. */}
         </p>
         <div className="lg:w-[35%] w-11/12 mx-auto mt-8 text-center">
           <div className="flex lg:flex-row flex-col-reverse justify-between text-center gap-6">
@@ -25,9 +25,11 @@ const Banner = () => {
             </div>
             <div className="flex items-center justify-center">
               <FaMapMarkerAlt className="text-[#FFFF40] text-xl mr-2" />
-              <p className="md:text-xl text-base font-medium uppercase">
-              Emerald Event Center, Uyo
-              </p>
+              <a target="_blank" href="https://goo.gl/maps/wP433hvZUddq2JuW7">
+                <p className="md:text-xl text-base font-medium uppercase">
+                  Emerald Event Center, Uyo
+                </p>
+              </a>
             </div>
           </div>
           <p className="mt-5 mb-3 text-center">Event starts in</p>
