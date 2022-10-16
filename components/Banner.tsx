@@ -25,8 +25,8 @@ const Banner = () => {
             </div>
             <div className="flex items-center justify-center">
               <FaMapMarkerAlt className="text-[#FFFF40] text-xl mr-2" />
-              <p className="md:text-xl text-base font-medium">
-                TROPICANA MALL, UYO
+              <p className="md:text-xl text-base font-medium uppercase">
+              Emerald Event Center, Uyo
               </p>
             </div>
           </div>
