@@ -1,15 +1,15 @@
-import React from "react";
-import Image from "next/image";
-import { FaFacebookSquare, FaTwitter, FaLinkedin } from "react-icons/fa";
-import { Swiper, SwiperSlide } from "swiper/react";
+import React from "react"
+import Image from "next/image"
+import { FaFacebookSquare, FaTwitter, FaLinkedin } from "react-icons/fa"
+import { Swiper, SwiperSlide } from "swiper/react"
 // Import Swiper React components
 
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
+import "swiper/css"
+import "swiper/css/pagination"
+import "swiper/css/navigation"
 
 // import required modules
-import { Pagination, Navigation } from "swiper";
+import { Pagination, Navigation } from "swiper"
 
 const AboutMc = () => {
   return (
@@ -22,13 +22,9 @@ const AboutMc = () => {
           <div className="flex gap-8 flex-col lg:flex-row">
             <div className="lg:w-6/12 w-full">
               <p className="md:text-base text-base mb-5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue
-                aliquam nisl, eget risus. Id sapien amet condimentum vitae,
-                turpis id tellus eget nulla. Semper blandit justo, feugiat
-                sagittis turpis morbi. Consectetur sit vitae, lobortis odio eu.
-                Nec, vulputate sit amet rhoncus ac egestas vel, dolor. Cras sit
-                volutpat pharetra varius nibh nunc pellentesque lorem urna.
-                Volutpat donec enim sit nisl augue tristique blandit.
+                <span className="font-bold">Holly Okosin George</span> is a renowned Compere, Presenter, and
+                Comedian who has actively been in the entertainment industry,
+                with experience spanning oven 10 years.
               </p>
               <p className="md:text-base text-base">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue
@@ -114,7 +110,7 @@ const AboutMc = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default AboutMc;
+export default AboutMc

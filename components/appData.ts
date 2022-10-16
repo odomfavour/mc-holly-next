@@ -22,6 +22,18 @@ import premiumTicket from "../public/premium-ticket.jpg"
 import vipTicket from "../public/vip-ticket.jpg"
 import executiveTicket from "../public/executive-ticket.jpg"
 
+// sponsors
+
+import ubotex from "../public/sponsors/ubotex.jpg"
+import coconut from "../public/sponsors/coconut.jpg"
+import hensek from "../public/sponsors/hensek.jpg"
+import ibomair from "../public/sponsors/ibom_air.jpg"
+import jsmlogo from "../public/sponsors/jsm_logo.jpg"
+import kings from "../public/sponsors/kings.jpg"
+import mix from "../public/sponsors/mix.jpg"
+import lekki from "../public/sponsors/lekki.jpg"
+import montyL from "../public/sponsors/monty.jpg"
+import metering from "../public/sponsors/metering.jpg"
 
 export const hotels = [
   {
@@ -106,6 +118,7 @@ export const gallery = [
     title: "",
   },
 ]
+
 export const gallery1 = [
   {
     id: 1,
@@ -204,70 +217,112 @@ export const mainGal1 = [
 
 export const tickets = [
   {
-      id: 1,
-      name: 'regular',
-      image: regularTicket,
-      link: 'https://paystack.com/buy/hollys-era-regular-telopi',
-      price: '3,000'
+    id: 1,
+    name: "regular",
+    image: regularTicket,
+    link: "https://paystack.com/buy/hollys-era-regular-telopi",
+    price: "3,000",
   },
   {
-      id: 2,
-      name: 'vip',
-      image: vipTicket,
-      link: 'https://paystack.com/buy/hollys-era-vip-axmjdz',
-      price: '10,000'
+    id: 2,
+    name: "vip",
+    image: vipTicket,
+    link: "https://paystack.com/buy/hollys-era-vip-axmjdz",
+    price: "10,000",
   },
   {
-      id: 3,
-      name: 'executive',
-      image: executiveTicket,
-      link: 'https://paystack.com/buy/hollys-era-exclusive-pfwjwd',
-      price: '300,000'
+    id: 3,
+    name: "executive",
+    image: executiveTicket,
+    link: "https://paystack.com/buy/hollys-era-exclusive-pfwjwd",
+    price: "300,000",
   },
   {
-      id: 4,
-      name: 'premium',
-      image: premiumTicket,
-      link: 'https://paystack.com/buy/hollys-era-premium-dymuaj',
-      price: '600,000'
-  }    
+    id: 4,
+    name: "premium",
+    image: premiumTicket,
+    link: "https://paystack.com/buy/hollys-era-premium-dymuaj",
+    price: "600,000",
+  },
 ]
 
 export const headerLinks = [
   {
-      id: 1,
-      name: 'Home',
-      url: '/',
+    id: 1,
+    name: "Home",
+    url: "/",
   },
   {
-      id: 2,
-      name: 'Sponsor',
-      url: '/#sponsors',
+    id: 2,
+    name: "Sponsor",
+    url: "/#sponsors",
   },
   {
-      id: 3,
-      name: 'Tickets',
-      url: '/ticket',
+    id: 3,
+    name: "Tickets",
+    url: "/ticket",
   },
   {
-      id: 4,
-      name: 'About event',
-      url: '/#aboutEvent',
+    id: 4,
+    name: "About event",
+    url: "/#aboutEvent",
   },
   {
-      id: 5,
-      name: 'About McHolly',
-      url: '/#aboutMC',
+    id: 5,
+    name: "About McHolly",
+    url: "/#aboutMC",
   },
   {
-      id: 6,
-      name: 'Accomodation',
-      url: '/#accomodation',
+    id: 6,
+    name: "Accomodation",
+    url: "/#accomodation",
   },
   {
-      id: 7,
-      name: 'Gallery',
-      url: '/gallery',
+    id: 7,
+    name: "Gallery",
+    url: "/gallery",
   },
-  
+]
+
+export const sponsors = [
+  {
+    id: 1,
+    image: ubotex,
+  },
+  {
+    id: 2,
+    image: coconut,
+  },
+  {
+    id: 3,
+    image: ibomair,
+  },
+  {
+    id: 4,
+    image: jsmlogo,
+  },
+  {
+    id: 5,
+    image: kings,
+  },
+  {
+    id: 6,
+    image: lekki,
+  },
+  {
+    id: 7,
+    image: metering,
+  },
+  {
+    id: 8,
+    image: mix,
+  },
+  {
+    id: 9,
+    image: montyL,
+  },
+  {
+    id: 10,
+    image: hensek,
+  },
 ]

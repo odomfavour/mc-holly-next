@@ -1,23 +1,21 @@
-import React, {useState} from "react";
-import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
-import Image from "next/image";
-import { Swiper, SwiperSlide,  } from "swiper/react";
+import React, { useState } from "react"
+import { FaEnvelope, FaPhoneAlt } from "react-icons/fa"
+import Image from "next/image"
+import { Swiper, SwiperSlide } from "swiper/react"
+import { sponsors } from "./appData"
 // Import Swiper React components
 
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
+import "swiper/css"
+import "swiper/css/pagination"
+import "swiper/css/navigation"
 
 // import required modules
-import { Pagination, Navigation } from "swiper";
-
+import SwiperCore, { Pagination, Navigation, Autoplay } from "swiper"
 
 // Import Swiper styles
-import "swiper/css";
-
+import "swiper/css"
+SwiperCore.use([Autoplay]);
 const Sponsor = () => {
-
-  
   return (
     <section>
       <div className="w-11/12 mx-auto" id="sponsors">
@@ -52,136 +50,54 @@ const Sponsor = () => {
             spaceBetween={50}
             slidesPerView={8}
             navigation
-            autoplay
+            loop={true}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
             modules={[Pagination, Navigation]}
             breakpoints={{
-                    320: {
-                        slidesPerView: 2,
-                        spaceBetween: 50
-                    },
-                    375: {
-                        slidesPerView: 3,
-                        spaceBetween: 10
-                    },
-                    // when window width is <= 999px
-                    768: {
-                        slidesPerView: 4,
-                        spaceBetween: 10
-                    },
-                    999: {
-                        slidesPerView: 8,
-                        spaceBetween: 10
-                    }
-
-                }}
+              320: {
+                slidesPerView: 2,
+                spaceBetween: 50,
+              },
+              375: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+              },
+              // when window width is <= 999px
+              768: {
+                slidesPerView: 4,
+                spaceBetween: 10,
+              },
+              999: {
+                slidesPerView: 8,
+                spaceBetween: 10,
+              },
+            }}
             onSlideChange={() => console.log("slide change")}
             onSwiper={(swiper) => console.log(swiper)}
           >
-            <SwiperSlide>
-              <div className="flex items-center justify-center">
-                <Image
-                  src="/sponsor.png"
-                  width="100px"
-                  height="100px"
-                  objectFit="cover"
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="flex items-center justify-center">
-                <Image
-                  src="/sponsor.png"
-                  width="100px"
-                  height="100px"
-                  objectFit="cover"
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="flex items-center justify-center">
-                <Image
-                  src="/sponsor.png"
-                  width="100px"
-                  height="100px"
-                  objectFit="cover"
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="flex items-center justify-center">
-                <Image
-                  src="/sponsor.png"
-                  width="100px"
-                  height="100px"
-                  objectFit="cover"
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="flex items-center justify-center">
-                <Image
-                  src="/sponsor.png"
-                  width="100px"
-                  height="100px"
-                  objectFit="cover"
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="flex items-center justify-center">
-                <Image
-                  src="/sponsor.png"
-                  width="100px"
-                  height="100px"
-                  objectFit="cover"
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="flex items-center justify-center">
-                <Image
-                  src="/sponsor.png"
-                  width="100px"
-                  height="100px"
-                  objectFit="cover"
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="flex items-center justify-center">
-                <Image
-                  src="/sponsor.png"
-                  width="100px"
-                  height="100px"
-                  objectFit="cover"
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="flex items-center justify-center">
-                <Image
-                  src="/sponsor.png"
-                  width="100px"
-                  height="100px"
-                  objectFit="cover"
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="flex items-center justify-center">
-                <Image
-                  src="/sponsor.png"
-                  width="100px"
-                  height="100px"
-                  objectFit="cover"
-                />
-              </div>
-            </SwiperSlide>
+            {sponsors.map((sponsor) => {
+              const { id, image } = sponsor
+              return (
+                <SwiperSlide key={id}>
+                  <div className="flex items-center justify-center">
+                    <Image
+                      src={image}
+                      width="100px"
+                      height="100px"
+                      objectFit="contain"
+                    />
+                  </div>
+                </SwiperSlide>
+              )
+            })}
           </Swiper>
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Sponsor;
+export default Sponsor

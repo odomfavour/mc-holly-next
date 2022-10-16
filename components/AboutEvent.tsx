@@ -1,14 +1,14 @@
-import React from "react";
-import Image from "next/image";
-import { Swiper, SwiperSlide } from "swiper/react";
+import React from "react"
+import Image from "next/image"
+import { Swiper, SwiperSlide } from "swiper/react"
 // Import Swiper React components
 
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
+import "swiper/css"
+import "swiper/css/pagination"
+import "swiper/css/navigation"
 
 // import required modules
-import { Pagination, Navigation } from "swiper";
+import { Pagination, Navigation } from "swiper"
 
 const AboutEvent = () => {
   return (
@@ -77,31 +77,41 @@ const AboutEvent = () => {
                 </SwiperSlide>
               </Swiper>
             </div>
-            <div className="lg:w-6/12 w-full">
-              <p className="text-base mb-5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue
-                aliquam nisl, eget risus. Id sapien amet condimentum vitae,
-                turpis id tellus eget nulla. Semper blandit justo, feugiat
-                sagittis turpis morbi. Consectetur sit vitae, lobortis odio eu.
-                Nec, vulputate sit amet rhoncus ac egestas vel, dolor. Cras sit
-                volutpat pharetra varius nibh nunc pellentesque lorem urna.
-                Volutpat donec enim sit nisl augue tristique blandit.
-              </p>
-              <p className="text-base">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue
-                aliquam nisl, eget risus. Id sapien amet condimentum vitae,
-                turpis id tellus eget nulla. Semper blandit justo, feugiat
-                sagittis turpis morbi. Consectetur sit vitae, lobortis odio eu.
-                Nec, vulputate sit amet rhoncus ac egestas vel, dolor. Cras sit
-                volutpat pharetra varius nibh nunc pellentesque lorem urna.
-                Volutpat donec enim sit nisl augue tristique blandit.
-              </p>
+            <div className="lg:w-6/12 w-full flex items-center">
+              <div>
+                <p className="text-base mb-5">
+                  Holly's Era is a comedy driven entertainment brand based in
+                  Akwa Ibom state. Our Goal is to promote our entertainment
+                  culture and to creatively explore opportunities for developing
+                  talented Nigerian youths in Akwa Ibom state and beyond.
+                </p>
+                <p className="text-base mb-5">
+                  We actively pursue our goal by discovering talents, organizing
+                  shows and performing at special occasions on invitation.
+                </p>
+                <p className="text-base mb-5">
+                  Our shows are exclusively packaged for decent and mature
+                  minds, void of discrimination against certain elements that
+                  define our humanity such as race, status, principles, gender,
+                  age, religion, political affiliations... etc
+                </p>
+                <p className="text-base mb-5">
+                  The mission is to use comedy business as a vehicle to drive
+                  innovation and creativity for sustainable youth capacity
+                  development in the Akwa Ibom state entertainment industry and
+                  tourism sector.
+                </p>
+                <p className="text-base">
+                  The vision is to become one of the foremost internationally
+                  recognized comedy and entertainment brands in Africa.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default AboutEvent;
+export default AboutEvent
