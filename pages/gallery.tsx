@@ -21,6 +21,11 @@ const gallery = () => {
     <div>
       <Head>
         <title>Gallery - MC Holly</title>
+        <meta
+          name="description"
+          content="Holly's Era is a comedy driven entertainment brand based in Akwa Ibom state."
+        />
+        <meta name="keywords" content="comedy, entertainment, fun" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -37,23 +42,41 @@ const gallery = () => {
             </h3>
             <div className="flex bg-[#F9F9F9] rounded-lg flex-col lg:flex-row">
               <div className="w-1/2">
-                <p className={`${is2021 ?'text-[#2252CC] text-4xl font-bold text-center py-[20px] ':'text-[#818181] text-4xl font-normal text-center py-[20px]'}`} role="button" onClick={switchTo21}>
+                <p
+                  className={`${
+                    is2021
+                      ? "text-[#2252CC] text-4xl font-bold text-center py-[20px] "
+                      : "text-[#818181] text-4xl font-normal text-center py-[20px]"
+                  }`}
+                  role="button"
+                  onClick={switchTo21}
+                >
                   2021
                 </p>
               </div>
               <div className="w-1/2">
-                <p className={`${is2022 ?'text-[#2252CC] text-4xl font-bold text-center py-[20px] ':'text-[#818181] text-4xl font-normal text-center py-[20px]'}`} role="button" onClick={switchTo22}>
+                <p
+                  className={`${
+                    is2022
+                      ? "text-[#2252CC] text-4xl font-bold text-center py-[20px] "
+                      : "text-[#818181] text-4xl font-normal text-center py-[20px]"
+                  }`}
+                  role="button"
+                  onClick={switchTo22}
+                >
                   2021
                 </p>
               </div>
             </div>
-            {
-              is2021 ? (<div className="mt-10">
-              <GallerySlider/>
-             </div>): (<div className="mt-10">
-             <GallerySlider/>
-            </div>)
-            }
+            {is2021 ? (
+              <div className="mt-10">
+                <GallerySlider />
+              </div>
+            ) : (
+              <div className="mt-10">
+                <GallerySlider />
+              </div>
+            )}
           </div>
         </main>
       </PageWrapper>

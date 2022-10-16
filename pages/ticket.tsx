@@ -11,6 +11,11 @@ const ticket: NextPage = () => {
     <div>
       <Head>
         <title>Ticket - MC Holly</title>
+        <meta
+          name="description"
+          content="Holly's Era is a comedy driven entertainment brand based in Akwa Ibom state."
+        />
+        <meta name="keywords" content="comedy, entertainment, fun" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -35,11 +40,19 @@ const ticket: NextPage = () => {
                 <section className="pb-16">
                   <div className="grid lg:grid-cols-1 md:grid-cols-1 grid-cols-1 gap-8">
                     {tickets.map((ticket) => {
-                      const {name, id, image, link, price } = ticket
+                      const { name, id, image, link, price } = ticket
 
                       return (
                         <div
-                          className={`${name ==='regular' ? 'border border-[#CACACA] rounded-md bg-[#D8C9AC7F] p-[20px]': name === 'vip' ? 'border border-[#CACACA] rounded-md  p-[20px]  bg-[#A6689733]' : name === 'executive' ? 'border border-[#CACACA] rounded-md  p-[20px]  bg-[#E5E6E8]': 'border border-[#CACACA] rounded-md  p-[20px] bg-[#CBE6D37F]'}`}
+                          className={`${
+                            name === "regular"
+                              ? "border border-[#CACACA] rounded-md bg-[#D8C9AC7F] p-[20px]"
+                              : name === "vip"
+                              ? "border border-[#CACACA] rounded-md  p-[20px]  bg-[#A6689733]"
+                              : name === "executive"
+                              ? "border border-[#CACACA] rounded-md  p-[20px]  bg-[#E5E6E8]"
+                              : "border border-[#CACACA] rounded-md  p-[20px] bg-[#CBE6D37F]"
+                          }`}
                           key={id}
                         >
                           <div className="grid lg:grid-cols-3 md:grid-cols-1 grid-cols-1 lg:gap-8 gap-5 items-center">
@@ -51,7 +64,17 @@ const ticket: NextPage = () => {
                                 height={150}
                               />
                             </div>
-                            <p className={`${name ==='regular' ? 'font-semibold text-[32px] text-center text-[#563E25]': name === 'vip' ? 'font-semibold text-[32px] text-center text-[#40263A]' : name === 'executive' ? 'font-semibold text-[32px] text-center text-[#57585A]': 'font-semibold text-[32px] text-center text-[#326742]'}`}>
+                            <p
+                              className={`${
+                                name === "regular"
+                                  ? "font-semibold text-[32px] text-center text-[#563E25]"
+                                  : name === "vip"
+                                  ? "font-semibold text-[32px] text-center text-[#40263A]"
+                                  : name === "executive"
+                                  ? "font-semibold text-[32px] text-center text-[#57585A]"
+                                  : "font-semibold text-[32px] text-center text-[#326742]"
+                              }`}
+                            >
                               ₦ {price}
                             </p>
                             <div className="info flex items-center justify-center mb-3 lg:mb-0">

@@ -1,6 +1,5 @@
 import type { NextPage } from "next"
 import Head from "next/head"
-// import Image from "next/image";
 import AboutEvent from "../components/AboutEvent"
 import AboutMc from "../components/AboutMc"
 import Accomodation from "../components/Accomodation"
@@ -15,6 +14,11 @@ const Home: NextPage = () => {
     <div className="relative">
       <Head>
         <title>Home - MC Holly</title>
+        <meta
+          name="description"
+          content="Holly's Era is a comedy driven entertainment brand based in Akwa Ibom state."
+        />
+        <meta name="keywords" content="comedy, entertainment, fun" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
