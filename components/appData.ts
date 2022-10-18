@@ -34,6 +34,7 @@ import mix from "../public/sponsors/mix.jpg"
 import lekki from "../public/sponsors/lekki.jpg"
 import montyL from "../public/sponsors/monty.jpg"
 import metering from "../public/sponsors/metering.jpg"
+import kayzplace from "../public/sponsors/kayzplace.png"
 
 export const hotels = [
   {
@@ -324,5 +325,9 @@ export const sponsors = [
   {
     id: 10,
     image: hensek,
+  },
+  {
+    id: 11,
+    image: kayzplace,
   },
 ]

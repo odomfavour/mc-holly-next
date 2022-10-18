@@ -50,7 +50,7 @@ const AboutEvent = () => {
               >
                 <SwiperSlide>
                   <Image
-                    src="/about-event.png"
+                    src="/H1.jpg"
                     width={800}
                     height={650}
                     objectFit="contain"
@@ -59,7 +59,7 @@ const AboutEvent = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                   <Image
-                    src="/about-event.png"
+                    src="/H2.jpg"
                     width={800}
                     height={650}
                     objectFit="contain"
@@ -68,7 +68,7 @@ const AboutEvent = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                   <Image
-                    src="/about-event.png"
+                    src="/H3.jpg"
                     width={800}
                     height={650}
                     objectFit="contain"

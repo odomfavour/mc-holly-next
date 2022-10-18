@@ -20,13 +20,14 @@ const AboutMc = () => {
             About MC Holly
           </h3>
           <div className="flex gap-8 flex-col lg:flex-row">
-            <div className="lg:w-6/12 w-full">
+            <div className="lg:w-6/12 w-full flex justify-center flex-col">
               <p className="md:text-base text-base mb-5">
-                <span className="font-bold">Holly Okosin George</span> is a renowned Compere, Presenter, and
-                Comedian who has actively been in the entertainment industry,
-                with experience spanning oven 10 years.
+                <span className="font-bold">Holly Okosin George</span> is a
+                renowned Compere, Presenter, and Comedian who has actively been
+                in the entertainment industry, with experience spanning oven 10
+                years.
               </p>
-              <p className="md:text-base text-base">
+              {/* <p className="md:text-base text-base">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue
                 aliquam nisl, eget risus. Id sapien amet condimentum vitae,
                 turpis id tellus eget nulla. Semper blandit justo, feugiat
@@ -34,7 +35,7 @@ const AboutMc = () => {
                 Nec, vulputate sit amet rhoncus ac egestas vel, dolor. Cras sit
                 volutpat pharetra varius nibh nunc pellentesque lorem urna.
                 Volutpat donec enim sit nisl augue tristique blandit.
-              </p>
+              </p> */}
               <div className="social-links flex mt-5">
                 <div className="rounded-full bg-white w-[64px] h-[64px] flex justify-center items-center mr-3">
                   <FaFacebookSquare className="text-[#2252CC] text-2xl" />
@@ -78,28 +79,37 @@ const AboutMc = () => {
               >
                 <SwiperSlide>
                   <Image
-                    src="/mc.png"
+                    src="/MCHolly_Single.jpg"
                     width={768}
                     height={643}
-                    objectFit="cover"
+                    objectFit="contain"
                     priority
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <Image
-                    src="/mc.png"
+                    src="/MCHolly_Single1.jpg"
                     width={768}
                     height={643}
-                    objectFit="cover"
+                    objectFit="contain"
                     priority
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <Image
-                    src="/mc.png"
+                    src="/MCHolly_Single2.jpg"
                     width={768}
                     height={643}
-                    objectFit="cover"
+                    objectFit="contain"
+                    priority
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Image
+                    src="/MCHolly_Single3.jpg"
+                    width={768}
+                    height={643}
+                    objectFit="contain"
                     priority
                   />
                 </SwiperSlide>
