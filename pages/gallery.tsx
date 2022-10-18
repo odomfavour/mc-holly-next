@@ -64,7 +64,7 @@ const gallery = () => {
                   role="button"
                   onClick={switchTo22}
                 >
-                  2021
+                  2020
                 </p>
               </div>
             </div>

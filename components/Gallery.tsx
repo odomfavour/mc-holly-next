@@ -1,9 +1,18 @@
 import Link from "next/link"
-import React from "react"
+import React, { useCallback, useState } from "react"
 import { gallery, gallery1 } from "./appData"
 import Image from "next/image"
+import { useGlobalContext } from "../context/context"
+import GalleryModal from "./GalleryModal"
 
 const Gallery = () => {
+  const { openGalleryModal } = useGlobalContext()
+  const [currentImage, setCurrentImage] = useState(null)
+  const openCharacter = useCallback((character: any) => {
+    setCurrentImage(character)
+    openGalleryModal()
+  }, [])
+
   return (
     <section className="bg-[#EBF3ED] min-h-screen py-8">
       <div className="w-11/12 mx-auto">
@@ -22,6 +31,8 @@ const Gallery = () => {
                         <div
                           className="relative min-h-[140px] mb-3 break-inside-avoid"
                           key={id}
+                          role="button"
+                          onClick={() => openCharacter(item)}
                         >
                           <Image
                             src={`${image.src}`}
@@ -56,6 +67,8 @@ const Gallery = () => {
                         <div
                           className="relative min-h-[140px] mb-3 break-inside-avoid"
                           key={id}
+                          role="button"
+                          onClick={() => openCharacter(item)}
                         >
                           <Image
                             src={`${image.src}`}
@@ -82,11 +95,14 @@ const Gallery = () => {
           </div>
 
           <div className="mt-12 flex justify-center">
-            <p className=" border md:px-[64px] md:py-[20px] px-5 py-3 rounded-md border-[#454743] cursor-pointer text-[#1F1F1F]">
-              <Link href="/gallery">View Gallery</Link>
-            </p>
+            <Link href="/gallery">
+              <p className=" border md:px-[64px] md:py-[20px] px-5 py-3 rounded-md border-[#454743] cursor-pointer text-[#1F1F1F]">
+                View Gallery
+              </p>
+            </Link>
           </div>
         </div>
+        <GalleryModal character={currentImage} />
       </div>
     </section>
   )
