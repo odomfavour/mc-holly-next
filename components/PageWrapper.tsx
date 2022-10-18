@@ -1,5 +1,6 @@
 import React from "react"
 import Footer from "./Footer"
+import GalleryModal from "./GalleryModal"
 import Header from "./Header"
 import MobileNav from "./MobileNav"
 
@@ -13,6 +14,7 @@ const PageWrapper = ({ children }: Props) => {
       <Header />
       {children}
       <MobileNav/>
+     
       <Footer />
     </section>
   )

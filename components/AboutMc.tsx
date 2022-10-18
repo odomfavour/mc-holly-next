@@ -1,7 +1,8 @@
 import React from "react"
 import Image from "next/image"
-import { FaFacebookSquare, FaTwitter, FaLinkedin } from "react-icons/fa"
+import { FaFacebookSquare, FaYoutube, FaLinkedin } from "react-icons/fa"
 import { Swiper, SwiperSlide } from "swiper/react"
+import Link from "next/link"
 // Import Swiper React components
 
 import "swiper/css"
@@ -37,15 +38,21 @@ const AboutMc = () => {
                 Volutpat donec enim sit nisl augue tristique blandit.
               </p> */}
               <div className="social-links flex mt-5">
-                <div className="rounded-full bg-white w-[64px] h-[64px] flex justify-center items-center mr-3">
-                  <FaFacebookSquare className="text-[#2252CC] text-2xl" />
-                </div>
-                <div className="rounded-full bg-white w-[64px] h-[64px] flex justify-center items-center mr-3">
-                  <FaLinkedin className="text-2xl text-[#0A66C2]" />
-                </div>
-                <div className="rounded-full bg-white w-[64px] h-[64px] flex justify-center items-center">
-                  <FaTwitter className="text-2xl text-[#55ACEE]" />
-                </div>
+                <a href="https://web.facebook.com/profile.php?id=100064524676476" target="_blank">
+                  <div className="rounded-full bg-white w-[64px] h-[64px] flex justify-center items-center mr-3 cursor-pointer">
+                    <FaFacebookSquare className="text-[#2252CC] text-2xl" />
+                  </div>
+                </a>
+                <a href="#" target="_blank">
+                  <div className="rounded-full bg-white w-[64px] h-[64px] flex justify-center items-center mr-3 cursor-pointer">
+                    <FaLinkedin className="text-2xl text-[#0A66C2]" />
+                  </div>
+                </a>
+                <a href="#" target="_blank">
+                  <div className="rounded-full bg-white w-[64px] h-[64px] flex justify-center items-center cursor-pointer">
+                    <FaYoutube className="text-2xl text-[#ff0000]" />
+                  </div>
+                </a>
               </div>
             </div>
             <div className="lg:w-6/12 w-full">
@@ -74,8 +81,8 @@ const AboutMc = () => {
                     spaceBetween: 10,
                   },
                 }}
-                onSlideChange={() => console.log("slide change")}
-                onSwiper={(swiper) => console.log(swiper)}
+                onSlideChange={() => {return; console.log("slide change")}}
+                onSwiper={(swiper) => {return; console.log(swiper)}}
               >
                 <SwiperSlide>
                   <Image

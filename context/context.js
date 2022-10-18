@@ -4,6 +4,7 @@ const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
+  const [IsGalleryModalOpen, setIsGalleryModalOpen] = useState(false)
 
   const openMobileNav = () => {
     setIsMobileNavOpen(true);
@@ -13,6 +14,15 @@ const AppProvider = ({ children }) => {
     setIsMobileNavOpen(false);
   };
 
+  const openGalleryModal = (currentImage) => {
+    console.log(currentImage)
+    setIsGalleryModalOpen(true)
+  }
+
+  const closeGalleryModal = () => {
+    setIsGalleryModalOpen(false)
+  }
+
 
  
   return (
@@ -21,6 +31,9 @@ const AppProvider = ({ children }) => {
         isMobileNavOpen,
         openMobileNav,
         closeMobileNav,
+        IsGalleryModalOpen,
+        openGalleryModal,
+        closeGalleryModal
       }}
     >
       {children}

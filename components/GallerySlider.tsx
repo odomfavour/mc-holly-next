@@ -1,5 +1,7 @@
-import React from "react"
+import React, { useCallback, useState } from "react"
 import Image from "next/image"
+import { useGlobalContext } from "../context/context"
+import GalleryModal from "./GalleryModal"
 import { mainGal1 } from "../components/appData"
 import { Swiper, SwiperSlide } from "swiper/react"
 // Import Swiper React components
@@ -12,6 +14,12 @@ import "swiper/css/navigation"
 import { Pagination, Navigation } from "swiper"
 
 const GallerySlider = () => {
+  const { openGalleryModal } = useGlobalContext()
+  const [currentImage, setCurrentImage] = useState(null)
+  const openCharacter = useCallback((character: React.SetStateAction<null>) => {
+    setCurrentImage(character)
+    openGalleryModal()
+  }, [])
   return (
     <Swiper
       spaceBetween={50}
@@ -50,6 +58,8 @@ const GallerySlider = () => {
                 <div
                   className="relative min-h-[140px] mb-3 break-inside-avoid"
                   key={id}
+                  role="button"
+                  onClick={() => openCharacter(item)}
                 >
                   <Image
                     src={`${image.src}`}
@@ -96,6 +106,8 @@ const GallerySlider = () => {
                 <div
                   className="relative min-h-[140px] mb-3 break-inside-avoid"
                   key={id}
+                  role="button"
+                  onClick={() => openCharacter(item)}
                 >
                   <Image
                     src={`${image.src}`}
@@ -110,6 +122,7 @@ const GallerySlider = () => {
           </div>
         </div>
       </SwiperSlide>
+      <GalleryModal character={currentImage} />
     </Swiper>
   )
 }

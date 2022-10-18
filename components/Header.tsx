@@ -21,7 +21,7 @@ const Header = () => {
       }
     }
     window.addEventListener("scroll", handelScroll)
-    console.log(router.pathname)
+    // console.log(router.pathname)
 
     return () => {
       window.removeEventListener("scroll", handelScroll)
