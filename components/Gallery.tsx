@@ -6,12 +6,12 @@ import { useGlobalContext } from "../context/context"
 import GalleryModal from "./GalleryModal"
 
 const Gallery = () => {
-  const {openGalleryModal} = useGlobalContext()
+  const { openGalleryModal } = useGlobalContext()
   const [currentImage, setCurrentImage] = useState(null)
-  const openCharacter = useCallback((character: React.SetStateAction<null>) => {
+  const openCharacter = useCallback((character: any) => {
     setCurrentImage(character)
-    openGalleryModal();
-}, [])
+    openGalleryModal()
+  }, [])
 
   return (
     <section className="bg-[#EBF3ED] min-h-screen py-8">
@@ -102,7 +102,7 @@ const Gallery = () => {
             </Link>
           </div>
         </div>
-        <GalleryModal character={currentImage}/>
+        <GalleryModal character={currentImage} />
       </div>
     </section>
   )

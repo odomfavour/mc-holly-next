@@ -14,8 +14,7 @@ const AppProvider = ({ children }) => {
     setIsMobileNavOpen(false);
   };
 
-  const openGalleryModal = (currentImage) => {
-    console.log(currentImage)
+  const openGalleryModal = () => {
     setIsGalleryModalOpen(true)
   }
 

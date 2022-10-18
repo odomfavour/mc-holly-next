@@ -13,8 +13,7 @@ const PageWrapper = ({ children }: Props) => {
     <section>
       <Header />
       {children}
-      <MobileNav/>
-     
+      <MobileNav/> 
       <Footer />
     </section>
   )
