@@ -15,7 +15,7 @@ const Banner = () => {
           {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue
           aliquam nisl, eget risus. Id sapien amet. */}
         </p>
-        <div className="lg:w-[35%] w-11/12 mx-auto mt-8 text-center">
+        <div className="lg:w-[36%] w-11/12 mx-auto mt-8 text-center">
           <div className="flex lg:flex-row flex-col-reverse justify-between text-center gap-6">
             <div className="flex items-center justify-center lg:justify-start">
               <BsFillCalendarFill className="text-[#FFFF40] text-xl mr-2" />
@@ -32,6 +32,8 @@ const Banner = () => {
               </a>
             </div>
           </div>
+        </div>
+        <div className="lg:w-[30%] w-11/12 mx-auto mt-8 text-center">
           <p className="mt-5 mb-3 text-center">Event starts in</p>
           <div className="lg:w-full md:w-8/12 w-11/12 mx-auto">
             <Countdown />
