@@ -45,8 +45,14 @@ const AboutEvent = () => {
                     spaceBetween: 10,
                   },
                 }}
-                onSlideChange={() => {return;console.log("slide change")}}
-                onSwiper={(swiper) => {return; console.log(swiper)}}
+                onSlideChange={() => {
+                  return
+                  console.log("slide change")
+                }}
+                onSwiper={(swiper) => {
+                  return
+                  console.log(swiper)
+                }}
               >
                 <SwiperSlide>
                   <Image
@@ -68,7 +74,7 @@ const AboutEvent = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                   <Image
-                    src="/H3.jpg"
+                    src="/HE3.png"
                     width={800}
                     height={650}
                     objectFit="contain"
