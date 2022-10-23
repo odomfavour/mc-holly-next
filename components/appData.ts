@@ -222,28 +222,28 @@ export const tickets = [
     name: "regular",
     image: regularTicket,
     link: "https://paystack.com/buy/hollys-era-regular-telopi",
-    price: "3,000",
+    price: "5,000",
   },
   {
     id: 2,
     name: "vip",
     image: vipTicket,
     link: "https://paystack.com/buy/hollys-era-vip-axmjdz",
-    price: "10,000",
+    price: "20,000",
   },
   {
     id: 3,
     name: "executive",
     image: executiveTicket,
     link: "https://paystack.com/buy/hollys-era-exclusive-pfwjwd",
-    price: "300,000",
+    price: "500,000",
   },
   {
     id: 4,
     name: "premium",
     image: premiumTicket,
     link: "https://paystack.com/buy/hollys-era-premium-dymuaj",
-    price: "600,000",
+    price: "1,000,000",
   },
 ]
 
