@@ -74,7 +74,7 @@ const AboutEvent = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                   <Image
-                    src="/HE3.png"
+                    src="/HE3.jpg"
                     width={800}
                     height={650}
                     objectFit="contain"
