@@ -1,18 +1,18 @@
-import React, { useEffect, useState } from "react";
-import { FaFacebookSquare, FaTwitter, FaLinkedin } from "react-icons/fa";
-import Link from "next/link";
+import React, { useEffect, useState } from "react"
+import { FaFacebookSquare, FaTwitter, FaLinkedin } from "react-icons/fa"
+import Link from "next/link"
 
 const Footer = () => {
-  const [year, setYear] = useState(0);
+  const [year, setYear] = useState(0)
   const getYear = () => {
-    const d = new Date();
-    let currentYear = d.getFullYear();
-    setYear(currentYear);
-  };
+    const d = new Date()
+    let currentYear = d.getFullYear()
+    setYear(currentYear)
+  }
 
   useEffect(() => {
-    getYear();
-  }, []);
+    getYear()
+  }, [])
 
   return (
     <section className="py-10">
@@ -21,7 +21,7 @@ const Footer = () => {
           <li className="lg:border-r pr-3 border-[#FF8717]">
             <Link href="/">Home</Link>
           </li>
-          <li className="lg:border-r pr-3 border-[#FF8717]" >
+          <li className="lg:border-r pr-3 border-[#FF8717]">
             <Link href="/#sponsors">Sponsors</Link>
           </li>
           <li className="lg:border-r pr-3 border-[#FF8717]">
@@ -46,21 +46,27 @@ const Footer = () => {
           </div>
           <div className="md:w-7/12 w-full">
             <div className="social-links flex">
-              <div className="rounded-full bg-white w-[32px] h-[32px] md:w-[64px] md:h-[64px] flex justify-center items-center mr-3">
-                <FaFacebookSquare className="text-[#2252CC] text-xl md:text-2xl" />
-              </div>
-              <div className="rounded-full bg-white w-[32px] h-[32px] md:w-[64px] md:h-[64px] flex justify-center items-center mr-3">
-                <FaLinkedin className="text-xl md:text-2xl text-[#0A66C2]" />
-              </div>
-              <div className="rounded-full bg-white w-[32px] h-[32px] md:w-[64px] md:h-[64px] flex justify-center items-center">
-                <FaTwitter className="text-xl md:text-2xl text-[#55ACEE]" />
-              </div>
+              <a href="#" target="_blank">
+                <div className="rounded-full bg-white w-[32px] h-[32px] md:w-[64px] md:h-[64px] flex justify-center items-center mr-3">
+                  <FaFacebookSquare className="text-[#2252CC] text-xl md:text-2xl" />
+                </div>
+              </a>
+              <a href="#" target="_blank">
+                <div className="rounded-full bg-white w-[32px] h-[32px] md:w-[64px] md:h-[64px] flex justify-center items-center mr-3">
+                  <FaLinkedin className="text-xl md:text-2xl text-[#0A66C2]" />
+                </div>
+              </a>
+              <a href="#" target="_blank">
+                <div className="rounded-full bg-white w-[32px] h-[32px] md:w-[64px] md:h-[64px] flex justify-center items-center">
+                  <FaTwitter className="text-xl md:text-2xl text-[#55ACEE]" />
+                </div>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

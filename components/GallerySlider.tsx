@@ -83,6 +83,8 @@ const GallerySlider = () => {
                 <div
                   className="relative min-h-[140px] mb-3 break-inside-avoid"
                   key={id}
+                  role="button"
+                  onClick={() => openCharacter(item)}
                 >
                   <Image
                     src={`${image.src}`}
