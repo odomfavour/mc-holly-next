@@ -9,21 +9,21 @@ const Countdown = dynamic(() => import("./CountdownComponent"), { ssr: false })
 const Banner = () => {
   return (
     <section className="text-white bg-hero-pattern bg-cover bg-bottom min-h-screen py-8">
-      <div className="pt-24">
-        <h3 className="lg:text-8xl text-2xl text-center">HOLLY’S ERA 3</h3>
+      <div className="pt-[200px]">
+        {/* <h3 className="lg:text-8xl text-2xl text-center font-bold">HOLLY’S ERA 3</h3> */}
         <p className="text-center md:w-2/6 w-10/12 mx-auto text-base">
           {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue
           aliquam nisl, eget risus. Id sapien amet. */}
         </p>
-        <div className="lg:w-[40%] w-11/12 mx-auto mt-8 text-center">
+        <div className="lg:w-[50%] w-11/12 mx-auto mt-8 text-center">
           <div className="flex lg:flex-row flex-col-reverse justify-between text-center gap-6">
-            <div className="flex items-center justify-center lg:justify-start">
+            <div className="flex items-center justify-center lg:justify-start lg:ml-12">
               <BsFillCalendarFill className="text-[#FFFF40] text-xl mr-2" />
               <p className="md:text-xl text-base font-medium">
                 18TH NOVEMBER 2022
               </p>
             </div>
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center lg:ml-12">
               <FaMapMarkerAlt className="text-[#FFFF40] text-xl mr-2" />
               <a target="_blank" href="https://goo.gl/maps/wP433hvZUddq2JuW7">
                 <p className="md:text-xl text-base font-medium uppercase">
@@ -38,7 +38,7 @@ const Banner = () => {
           <div className="lg:w-full md:w-8/12 w-11/12 mx-auto">
             <Countdown />
           </div>
-          <div className="mt-20 flex justify-center">
+          {/* <div className="mt-20 flex justify-center">
             <Link href="/ticket">
               <p className="flex items-center bg-[#942828] md:px-[64px] md:py-[24px] px-[32px] py-3 md:text-[18px] text-base cursor-pointer">
                 {" "}
@@ -48,7 +48,7 @@ const Banner = () => {
                 </span>
               </p>
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { FaEnvelope, FaPhoneAlt } from "react-icons/fa"
 import Image from "next/image"
+import Link from "next/link"
 import { Swiper, SwiperSlide } from "swiper/react"
 import { sponsors } from "./appData"
 // Import Swiper React components
@@ -14,12 +15,24 @@ import SwiperCore, { Pagination, Navigation, Autoplay } from "swiper"
 
 // Import Swiper styles
 import "swiper/css"
+import { RiTicketFill } from "react-icons/ri"
 SwiperCore.use([Autoplay]);
 const Sponsor = () => {
   return (
     <section>
       <div className="w-11/12 mx-auto" id="sponsors">
         <div className="py-6 mb-20">
+        <div className="my-10 flex justify-center text-white">
+            <Link href="/ticket">
+              <p className="flex items-center bg-[#942828] md:px-[64px] md:py-[24px] px-[32px] py-3 md:text-[18px] text-base cursor-pointer">
+                {" "}
+                BUY TICKETS NOW{" "}
+                <span className="ml-3">
+                  <RiTicketFill className="text-3xl" />
+                </span>
+              </p>
+            </Link>
+          </div>
           <div className="flex md:flex-row flex-col">
             <div className="md:w-7/12 w-full">
               <div className="flex md:flex-row flex-col items-center justify-end mr-0 md:mr-8">
