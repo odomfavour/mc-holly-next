@@ -331,3 +331,66 @@ export const sponsors = [
     image: kayzplace,
   },
 ]
+
+export const artistes = [
+  {
+    id: 1,
+    name: 'Chilo Hello',
+    image: '',
+    role: 'RnB Artiste'
+  },
+  {
+    id: 2,
+    name: 'Basket Mouth',
+    image: '',
+    role: 'Commedian'
+  },
+  {
+    id: 3,
+    name: 'Shanks',
+    image: '',
+    role: 'RnB Artiste'
+  },
+  {
+    id: 4,
+    name: 'Johnny Drille',
+    image: '',
+    role: 'RnB Artiste'
+  },
+  {
+    id: 5,
+    name: 'Timi Dakolo',
+    image: '',
+    role: 'RnB Artiste'
+  },
+  {
+    id: 6,
+    name: 'Deills',
+    image: '',
+    role: 'RnB Artiste'
+  },
+  {
+    id: 7,
+    name: 'Thoson Drill',
+    image: '',
+    role: 'RnB Artiste'
+  },
+  {
+    id: 8,
+    name: 'James Doe',
+    image: '',
+    role: 'RnB Artiste'
+  },
+  {
+    id: 9,
+    name: 'Hello Hello',
+    image: '',
+    role: 'RnB Artiste'
+  },
+  {
+    id: 10,
+    name: 'Benny',
+    image: '',
+    role: 'RnB Artiste'
+  },
+]

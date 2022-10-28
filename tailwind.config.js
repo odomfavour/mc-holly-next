@@ -8,11 +8,14 @@ module.exports = {
     extend: {
       backgroundImage: {
         "hero-pattern": "url(../public/hero_banner.jpg)",
+        "artiste-hero": "url(../public/artistes/artiste-hero.png)",
         ticket1: "url(../public/ticket-1.png)",
         ticket2: "url(../public/ticket-2.png)",
         counter: "rgba(255, 255, 255, 0.3)",
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+  ],
 }
