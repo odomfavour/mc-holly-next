@@ -13,6 +13,9 @@ module.exports = {
         ticket2: "url(../public/ticket-2.png)",
         counter: "rgba(255, 255, 255, 0.3)",
       },
+      fontFamily: {
+        spaceG: [ 'Space Grotesk', 'sans-serif'],
+      },
     },
   },
   plugins: [

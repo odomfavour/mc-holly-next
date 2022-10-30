@@ -4,19 +4,21 @@ import PageWrapper from "../components/PageWrapper"
 import Image from "next/image"
 import { artistes } from "../components/appData"
 import Head from "next/head"
+import { NextPage } from "next"
 
-const artiste = () => {
+const artiste : NextPage = () => {
   const [currentArtiste, setCurrentArtiste] = useState({
     name: "Chilo Hello",
     id: 1,
     role: "Singer",
   })
-  const artisteRef = useRef(null)
+  const artisteRef = useRef<HTMLDivElement>(null)
   const openCharacter = (character: any) => {
     console.log(currentArtiste)
     setCurrentArtiste(character)
-    if(artisteRef) {
-      artisteRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' }) }
+    if (artisteRef.current) {
+      artisteRef.current.scrollIntoView({ behavior: "smooth", block: "start" })
+    }
   }
   return (
     <>
@@ -27,13 +29,7 @@ const artiste = () => {
           content="Holly's Era is a comedy driven entertainment brand based in Akwa Ibom state."
         />
         <meta name="keywords" content="comedy, entertainment, fun" />
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
-          rel="stylesheet"
-        ></link>
+        {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
       <PageWrapper>
         <section className="mt-[80px] scroll-smooth transition-all ease-in-out delay-150">
@@ -49,7 +45,11 @@ const artiste = () => {
                   // const { id, name, role } = artiste
                   return (
                     <div
-                      className={`${artiste.id !== currentArtiste.id ? 'artiste-box border-solid border-[#ABABAB] bg-white  border rounded-xl px-12 py-[55px] hover:bg-[#EFEDED] cursor-pointer' : 'artiste-box border-solid border-[#ABABAB] bg-[#EFEDED] border rounded-xl px-12 py-[55px] hover:bg-[#EFEDED] cursor-pointer'}`}
+                      className={`${
+                        artiste.id !== currentArtiste.id
+                          ? "artiste-box border-solid border-[#ABABAB] bg-white  border rounded-xl px-12 py-[55px] hover:bg-[#EFEDED] cursor-pointer"
+                          : "artiste-box border-solid border-[#ABABAB] bg-[#EFEDED] border rounded-xl px-12 py-[55px] hover:bg-[#EFEDED] cursor-pointer"
+                      }`}
                       key={artiste.id}
                       role="button"
                       onClick={() => openCharacter(artiste)}
@@ -73,71 +73,68 @@ const artiste = () => {
                   )
                 })}
               </div>
-             <section  ref={artisteRef}>
-             {currentArtiste && (
-                <div
-                  className="bg-[#F9F9F9] rounded-xl p-[40px]"
-                 
-                >
-                  <div className="md:grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-8">
-                    <div className="flex items-center">
-                      <div>
-                        <h4 className="text-[40px] font-medium text-[#1F1F1F]">
-                          {currentArtiste?.name}
-                        </h4>
-                        <p className="font-normal text-[20px] text-[#5D5FEF] mb-3">
-                          {currentArtiste.role}
-                        </p>
-                        <p className="mb-4">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Congue aliquam nisl, eget risus. Id sapien amet
-                          condimentum vitae, turpis id tellus eget nulla. Semper
-                          blandit justo, feugiat sagittis turpis morbi.
-                          Consectetur sit vitae, lobortis odio eu. Nec,
-                          vulputate sit amet rhoncus ac egestas vel, dolor. Cras
-                          sit volutpat pharetra varius nibh nunc pellentesque
-                          lorem urna. Volutpat donec enim sit nisl augue
-                          tristique blandit.
-                        </p>
+              <section ref={artisteRef}>
+                {currentArtiste && (
+                  <div className="bg-[#F9F9F9] rounded-xl p-[40px]">
+                    <div className="md:grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-8">
+                      <div className="flex items-center">
+                        <div>
+                          <h4 className="text-[40px] font-medium text-[#1F1F1F]">
+                            {currentArtiste?.name}
+                          </h4>
+                          <p className="font-normal text-[20px] text-[#5D5FEF] mb-3">
+                            {currentArtiste.role}
+                          </p>
+                          <p className="mb-4">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Congue aliquam nisl, eget risus. Id sapien
+                            amet condimentum vitae, turpis id tellus eget nulla.
+                            Semper blandit justo, feugiat sagittis turpis morbi.
+                            Consectetur sit vitae, lobortis odio eu. Nec,
+                            vulputate sit amet rhoncus ac egestas vel, dolor.
+                            Cras sit volutpat pharetra varius nibh nunc
+                            pellentesque lorem urna. Volutpat donec enim sit
+                            nisl augue tristique blandit.
+                          </p>
 
-                        <p>
-                          Duis tellus, tellus orci, semper. Rhoncus augue
-                          pellentesque neque viverra sem sit.{" "}
-                        </p>
-                        <div className="social-links flex mt-5">
-                          <a
-                            href="https://web.facebook.com/profile.php?id=100064524676476"
-                            target="_blank"
-                          >
-                            <div className="rounded-full bg-white w-[64px] h-[64px] flex justify-center items-center mr-3 cursor-pointer">
-                              <FaFacebookSquare className="text-[#2252CC] text-2xl" />
-                            </div>
-                          </a>
-                          <a href="#" target="_blank">
-                            <div className="rounded-full bg-white w-[64px] h-[64px] flex justify-center items-center mr-3 cursor-pointer">
-                              <FaLinkedin className="text-2xl text-[#0A66C2]" />
-                            </div>
-                          </a>
-                          <a href="#" target="_blank">
-                            <div className="rounded-full bg-white w-[64px] h-[64px] flex justify-center items-center cursor-pointer">
-                              <FaYoutube className="text-2xl text-[#ff0000]" />
-                            </div>
-                          </a>
+                          <p>
+                            Duis tellus, tellus orci, semper. Rhoncus augue
+                            pellentesque neque viverra sem sit.{" "}
+                          </p>
+                          <div className="social-links flex mt-5">
+                            <a
+                              href="https://web.facebook.com/profile.php?id=100064524676476"
+                              target="_blank"
+                            >
+                              <div className="rounded-full bg-white w-[64px] h-[64px] flex justify-center items-center mr-3 cursor-pointer">
+                                <FaFacebookSquare className="text-[#2252CC] text-2xl" />
+                              </div>
+                            </a>
+                            <a href="#" target="_blank">
+                              <div className="rounded-full bg-white w-[64px] h-[64px] flex justify-center items-center mr-3 cursor-pointer">
+                                <FaLinkedin className="text-2xl text-[#0A66C2]" />
+                              </div>
+                            </a>
+                            <a href="#" target="_blank">
+                              <div className="rounded-full bg-white w-[64px] h-[64px] flex justify-center items-center cursor-pointer">
+                                <FaYoutube className="text-2xl text-[#ff0000]" />
+                              </div>
+                            </a>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div className="mx-auto">
-                      <Image
-                        src="/artistes/artiste.png"
-                        width={539}
-                        height={461}
-                        objectFit="contain"
-                      />
+                      <div className="mx-auto">
+                        <Image
+                          src="/artistes/artiste.png"
+                          width={539}
+                          height={461}
+                          objectFit="contain"
+                        />
+                      </div>
                     </div>
                   </div>
-                </div>
-              )}
-             </section>
+                )}
+              </section>
               <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8 my-24">
                 {artistes.slice(0, 8).map((artiste) => {
                   // const { id, name, role } = artiste
