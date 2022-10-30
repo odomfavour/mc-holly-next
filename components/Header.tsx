@@ -1,10 +1,10 @@
-import Link from "next/link";
-import React from "react";
-import { useState, useEffect } from "react";
-import { useRouter } from "next/router";
-import { headerLinks } from "./appData";
-import { FaBars } from "react-icons/fa";
-import { useGlobalContext } from "../context/context";
+import Link from "next/link"
+import React from "react"
+import { useState, useEffect } from "react"
+import { useRouter } from "next/router"
+import { headerLinks } from "./appData"
+import { FaBars } from "react-icons/fa"
+import { useGlobalContext } from "../context/context"
 import Image from "next/image"
 
 const Header = () => {
@@ -29,11 +29,11 @@ const Header = () => {
   }, [])
 
   return (
-    <header className={`${isScrolled && "bg-[#141414]"}`}>
+    <header className={`${isScrolled ? "bg-[#141414]" :  router.pathname == "/" ? '': 'bg-white'}`}>
       <div className="w-11/12 mx-auto">
         <div className="header-inner">
           <div>
-            <h3
+            <Link href='/'
               className={`(${
                 router.pathname !== "/" && isScrolled
                   ? "text-xl text-white"
@@ -42,15 +42,16 @@ const Header = () => {
                   : "text-xl text-white"
               }`}
             >
-              <Image
-                src="/logo_white.png"
-                priority
-                height={50}
-                width={100}
-                alt="Holly's Era Logo"
-                objectFit="contain"
-              />
-            </h3>
+                <Image
+                  src={`${isScrolled ? '/logo_white.png' : router.pathname == '/'  ? '/logo_white.png' :'/logo.png'}`}
+                  priority
+                  height={50}
+                  width={100}
+                  alt="Holly's Era Logo"
+                  objectFit="contain"
+                  className="cursor-pointer"
+                />
+            </Link>
           </div>
           <ul className="hidden space-x-4 lg:flex">
             {headerLinks.map((item) => {
@@ -90,4 +91,4 @@ const Header = () => {
   )
 }
 
-export default Header;
+export default Header

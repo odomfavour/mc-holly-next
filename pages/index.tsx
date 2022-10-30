@@ -6,8 +6,10 @@ import Accomodation from "../components/Accomodation"
 import Banner from "../components/Banner"
 import Gallery from "../components/Gallery"
 import PageWrapper from "../components/PageWrapper"
+import PerformingArtiste from "../components/PerformingArtiste"
 import Sponsor from "../components/Sponsor"
 import Ticket from "../components/Ticket"
+import YoutubeArena from "../components/YoutubeArena"
 
 const Home: NextPage = () => {
   return (
@@ -33,9 +35,11 @@ const Home: NextPage = () => {
           <Banner />
           <Sponsor />
           <Ticket />
+          <PerformingArtiste/>
           <AboutEvent />
           <AboutMc />
           <Accomodation />
+          <YoutubeArena/>
           <Gallery />
         </main>
       </PageWrapper>

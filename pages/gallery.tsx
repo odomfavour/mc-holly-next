@@ -1,11 +1,12 @@
 // import type { NextPage } from "next";
+import { NextPage } from "next"
 import Head from "next/head"
 import { useState } from "react"
 import GallerySlider from "../components/GallerySlider"
 import PageWrapper from "../components/PageWrapper"
 
 
-const gallery = () => {
+const gallery : NextPage = () =>  {
   const [is2021, setIs2021] = useState(true)
   const [is2022, setIs2022] = useState(false)
   const switchTo22 = () => {
