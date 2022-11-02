@@ -33,7 +33,7 @@ const Header = () => {
       <div className="w-11/12 mx-auto">
         <div className="header-inner">
           <div>
-            <Link href='/'
+            <a href='/'
               className={`(${
                 router.pathname !== "/" && isScrolled
                   ? "text-xl text-white"
@@ -51,7 +51,7 @@ const Header = () => {
                   objectFit="contain"
                   className="cursor-pointer"
                 />
-            </Link>
+            </a>
           </div>
           <ul className="hidden space-x-4 lg:flex">
             {headerLinks.map((item) => {

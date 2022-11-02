@@ -51,13 +51,13 @@ const PerformingArtiste = () => {
             onSwiper={(swiper) => console.log(swiper)}
           >
             {artistes.map((artiste) => {
-              const { id, name, role } = artiste
+              const { id, name, role, image } = artiste
               return (
                 <SwiperSlide key={id}>
                   <div className="artiste-box border-solid  border rounded-xl border-[#ABABAB] px-12 py-[55px] hover:bg-[#EFEDED] bg-white">
                     <div className="image-box">
                       <img
-                        src="/artistes/artiste.png"
+                        src={image.src}
                         alt=""
                         className="h-[180px] w-[180px] rounded-full object-cover mx-auto"
                       />
