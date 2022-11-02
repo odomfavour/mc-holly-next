@@ -13,7 +13,7 @@ const YoutubeArena = () => {
           <div className="video-card border border-solid p-[20px]">
             <div className="video-box aspect-w-16 aspect-h-9">
               <iframe
-                src="https://www.youtube.com/embed/r9jwGansp1E"
+                src="https://www.youtube.com/embed/LTdACJTPmIw"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
@@ -26,7 +26,7 @@ const YoutubeArena = () => {
           <div className="video-card border border-solid p-[20px]">
             <div className="video-box aspect-w-16 aspect-h-9">
               <iframe
-                src="https://www.youtube.com/embed/r9jwGansp1E"
+                src="https://www.youtube.com/embed/6MZSipnPlTM"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
@@ -39,7 +39,7 @@ const YoutubeArena = () => {
           <div className="video-card border border-solid p-[20px]">
             <div className="video-box aspect-w-16 aspect-h-9">
               <iframe
-                src="https://www.youtube.com/embed/r9jwGansp1E"
+                src="https://www.youtube.com/embed/LTdACJTPmIw"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
