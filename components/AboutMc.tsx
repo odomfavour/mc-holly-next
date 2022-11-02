@@ -43,12 +43,7 @@ const AboutMc = () => {
                     <FaFacebookSquare className="text-[#2252CC] text-2xl" />
                   </div>
                 </a>
-                <a href="#" target="_blank">
-                  <div className="rounded-full bg-white w-[64px] h-[64px] flex justify-center items-center mr-3 cursor-pointer">
-                    <FaLinkedin className="text-2xl text-[#0A66C2]" />
-                  </div>
-                </a>
-                <a href="#" target="_blank">
+                <a href="https://www.youtube.com/channel/UC8iMTeKb74YUsTmuYKeT5FA" target="_blank">
                   <div className="rounded-full bg-white w-[64px] h-[64px] flex justify-center items-center cursor-pointer">
                     <FaYoutube className="text-2xl text-[#ff0000]" />
                   </div>

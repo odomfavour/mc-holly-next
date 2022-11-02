@@ -1,4 +1,4 @@
-// import type { NextPage } from "next";
+
 import { NextPage } from "next"
 import Head from "next/head"
 import { useState } from "react"
@@ -27,13 +27,6 @@ const gallery : NextPage = () =>  {
           content="Holly's Era is a comedy driven entertainment brand based in Akwa Ibom state."
         />
         <meta name="keywords" content="comedy, entertainment, fun" />
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
-          rel="stylesheet"
-        ></link>
       </Head>
       <PageWrapper>
         <main>
@@ -41,7 +34,8 @@ const gallery : NextPage = () =>  {
             <h3 className="text-[40px] mb-3 font-bold text-center pt-28">
               GALLERY
             </h3>
-            <div className="flex bg-[#F9F9F9] rounded-lg flex-col lg:flex-row">
+            <h5 className="text-center my-28 text-[40px]">Coming Soon</h5>
+            {/* <div className="flex bg-[#F9F9F9] rounded-lg flex-col lg:flex-row">
               <div className="w-1/2">
                 <p
                   className={`${
@@ -77,7 +71,7 @@ const gallery : NextPage = () =>  {
               <div className="mt-10">
                 <GallerySlider />
               </div>
-            )}
+            )} */}
           </div>
         </main>
       </PageWrapper>

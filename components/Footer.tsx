@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import { FaFacebookSquare, FaTwitter, FaLinkedin } from "react-icons/fa"
+import { FaFacebookSquare, FaTwitter, FaLinkedin, FaYoutube } from "react-icons/fa"
 import Link from "next/link"
 
 const Footer = () => {
@@ -45,23 +45,18 @@ const Footer = () => {
             <p>&copy; Copyright {year}</p>
           </div>
           <div className="md:w-7/12 w-full">
-            <div className="social-links flex">
-              <a href="#" target="_blank">
-                <div className="rounded-full bg-white w-[32px] h-[32px] md:w-[64px] md:h-[64px] flex justify-center items-center mr-3">
-                  <FaFacebookSquare className="text-[#2252CC] text-xl md:text-2xl" />
-                </div>
-              </a>
-              <a href="#" target="_blank">
-                <div className="rounded-full bg-white w-[32px] h-[32px] md:w-[64px] md:h-[64px] flex justify-center items-center mr-3">
-                  <FaLinkedin className="text-xl md:text-2xl text-[#0A66C2]" />
-                </div>
-              </a>
-              <a href="#" target="_blank">
-                <div className="rounded-full bg-white w-[32px] h-[32px] md:w-[64px] md:h-[64px] flex justify-center items-center">
-                  <FaTwitter className="text-xl md:text-2xl text-[#55ACEE]" />
-                </div>
-              </a>
-            </div>
+          <div className="social-links flex mt-5">
+                <a href="https://web.facebook.com/profile.php?id=100064524676476" target="_blank">
+                  <div className="rounded-full bg-white w-[64px] h-[64px] flex justify-center items-center mr-3 cursor-pointer">
+                    <FaFacebookSquare className="text-[#2252CC] text-2xl" />
+                  </div>
+                </a>
+                <a href="https://www.youtube.com/channel/UC8iMTeKb74YUsTmuYKeT5FA" target="_blank">
+                  <div className="rounded-full bg-white w-[64px] h-[64px] flex justify-center items-center cursor-pointer">
+                    <FaYoutube className="text-2xl text-[#ff0000]" />
+                  </div>
+                </a>
+              </div>
           </div>
         </div>
       </div>

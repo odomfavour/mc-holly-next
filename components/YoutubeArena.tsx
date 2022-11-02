@@ -6,7 +6,7 @@ const YoutubeArena = () => {
       <div className="w-11/12 mx-auto">
        <div className="py-[80px]">
        <div>
-            <h4 className="text-[#1F1F1F] text-[28px] mb-4">RELIVE the experience on our Youtube channel</h4>
+            <h4 className="text-[#1F1F1F] text-[28px] mb-4"><span className="text-[#2252cc] font-semibold">RELIVE</span> the experience on our Youtube channel</h4>
             <p className="text-[18px] mb-5">Watch videos of Holly’s Era in the previous years</p>
         </div>
         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">

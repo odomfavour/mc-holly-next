@@ -36,6 +36,12 @@ import montyL from "../public/sponsors/monty.jpg"
 import metering from "../public/sponsors/metering.jpg"
 import kayzplace from "../public/sponsors/kayzplace.png"
 
+// artistes
+import osama from "../public/artistes/osama.jpg"
+import igodie from "../public/artistes/igodie.jpg"
+import pashun from "../public/artistes/pashun.jpg"
+import holly from "../public/artistes/holly.jpg"
+
 export const hotels = [
   {
     id: 1,
@@ -335,62 +341,26 @@ export const sponsors = [
 export const artistes = [
   {
     id: 1,
-    name: 'Chilo Hello',
-    image: '',
-    role: 'RnB Artiste'
+    name: 'Osama',
+    image: osama,
+    role: 'Comedian'
   },
   {
     id: 2,
-    name: 'Basket Mouth',
-    image: '',
-    role: 'Commedian'
+    name: 'MC Pashun',
+    image: pashun,
+    role: 'Comedian'
   },
   {
     id: 3,
-    name: 'Shanks',
-    image: '',
-    role: 'RnB Artiste'
+    name: 'MC Holly',
+    image: holly,
+    role: 'Comedian'
   },
   {
     id: 4,
-    name: 'Johnny Drille',
-    image: '',
-    role: 'RnB Artiste'
-  },
-  {
-    id: 5,
-    name: 'Timi Dakolo',
-    image: '',
-    role: 'RnB Artiste'
-  },
-  {
-    id: 6,
-    name: 'Deills',
-    image: '',
-    role: 'RnB Artiste'
-  },
-  {
-    id: 7,
-    name: 'Thoson Drill',
-    image: '',
-    role: 'RnB Artiste'
-  },
-  {
-    id: 8,
-    name: 'James Doe',
-    image: '',
-    role: 'RnB Artiste'
-  },
-  {
-    id: 9,
-    name: 'Hello Hello',
-    image: '',
-    role: 'RnB Artiste'
-  },
-  {
-    id: 10,
-    name: 'Benny',
-    image: '',
-    role: 'RnB Artiste'
-  },
+    name: 'I Go Die',
+    image: igodie,
+    role: 'Comedian'
+  },  
 ]
