@@ -40,7 +40,7 @@ const Home: NextPage = () => {
           <AboutMc />
           <Accomodation />
           <YoutubeArena/>
-          <Gallery />
+          {/* <Gallery /> */}
         </main>
       </PageWrapper>
     </div>
