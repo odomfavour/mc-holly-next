@@ -18,7 +18,7 @@ const Accomodation = () => {
       <div className="w-11/12 mx-auto">
         <div className="pt-20">
           <h3 className="text-center mb-10 font-semibold  md:text-5xl text-2xl">
-            Accomodation
+            Accommodation
           </h3>
         </div>
 

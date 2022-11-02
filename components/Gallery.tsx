@@ -88,7 +88,7 @@ const Gallery = () => {
                   </div>
                 </div>
                 <div className="bg-white p-9 rounded-bl-xl rounded-br-xl">
-                  <h3 className="text-center">MC Holly event 2022</h3>
+                  <h3 className="text-center">MC Holly event 2020</h3>
                 </div>
               </div>
             </div>
