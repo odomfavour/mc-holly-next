@@ -38,7 +38,7 @@ import kayzplace from "../public/sponsors/kayzplace.png"
 
 // artistes
 import osama from "../public/artistes/osama.jpg"
-import igodie from "../public/artistes/igodie.jpg"
+import igodye from "../public/artistes/igodie.jpg"
 import pashun from "../public/artistes/pashun.jpg"
 import holly from "../public/artistes/holly.jpg"
 
@@ -359,8 +359,8 @@ export const artistes = [
   },
   {
     id: 4,
-    name: 'I Go Die',
-    image: igodie,
+    name: 'I Go Dye',
+    image: igodye,
     role: 'Comedian'
   },  
 ]
