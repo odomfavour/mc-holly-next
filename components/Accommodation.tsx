@@ -1,7 +1,7 @@
 import React from "react"
 import { FaLink, FaMapMarkerAlt } from "react-icons/fa"
 import Image from "next/image"
-import { hotels } from "../components/appData"
+import { hotels } from "./appData"
 import Link from "next/link"
 import { Swiper, SwiperSlide } from "swiper/react"
 // Import Swiper React components
@@ -12,9 +12,9 @@ import "swiper/css/navigation"
 
 // import required modules
 import { Pagination, Navigation } from "swiper"
-const Accomodation = () => {
+const Accommodation = () => {
   return (
-    <section className="bg-[#E6D1DC] min-h-screen pb-20" id="accomodation">
+    <section className="bg-[#E6D1DC] min-h-screen pb-20" id="accommodation">
       <div className="w-11/12 mx-auto">
         <div className="pt-20">
           <h3 className="text-center mb-10 font-semibold  md:text-5xl text-2xl">
@@ -169,4 +169,4 @@ const Accomodation = () => {
   )
 }
 
-export default Accomodation
+export default Accommodation

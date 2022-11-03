@@ -271,7 +271,7 @@ export const headerLinks = [
   },
   {
     id: 4,
-    name: "About event",
+    name: "About the event",
     url: "/#aboutEvent",
   },
   {
@@ -281,8 +281,8 @@ export const headerLinks = [
   },
   {
     id: 6,
-    name: "Accomodation",
-    url: "/#accomodation",
+    name: "Accommodation",
+    url: "/#accommodation",
   },
   {
     id: 7,
