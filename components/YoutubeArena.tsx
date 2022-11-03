@@ -26,7 +26,7 @@ const YoutubeArena = () => {
           <div className="video-card border border-solid p-[20px]">
             <div className="video-box aspect-w-16 aspect-h-9">
               <iframe
-                src="https://www.youtube.com/embed/PhTngFUMS3M&t=330s"
+                src="https://www.youtube.com/embed/PhTngFUMS3M"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
