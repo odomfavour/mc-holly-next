@@ -13,40 +13,40 @@ const YoutubeArena = () => {
           <div className="video-card border border-solid p-[20px]">
             <div className="video-box aspect-w-16 aspect-h-9">
               <iframe
-                src="https://www.youtube.com/embed/LTdACJTPmIw"
+                src="https://www.youtube.com/embed/mkFI7E4b90I"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
             </div>
             <div className="video-info">
-              <h5 className="text-[18px] font-semibold pt-3">Holly’s Era 2021</h5>
+              <h5 className="text-[18px] font-semibold pt-3">Kenny Black vs Mercy Chinwo in India</h5>
             </div>
           </div>
           <div className="video-card border border-solid p-[20px]">
             <div className="video-box aspect-w-16 aspect-h-9">
               <iframe
-                src="https://www.youtube.com/embed/6MZSipnPlTM"
+                src="https://www.youtube.com/embed/PhTngFUMS3M&t=330s"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
             </div>
             <div className="video-info">
-              <h5 className="text-[18px] font-semibold pt-3">Holly’s Era 2021</h5>
+              <h5 className="text-[18px] font-semibold pt-3">HOLLYS ERA official monatge</h5>
             </div>
           </div>
           <div className="video-card border border-solid p-[20px]">
             <div className="video-box aspect-w-16 aspect-h-9">
               <iframe
-                src="https://www.youtube.com/embed/LTdACJTPmIw"
+                src="https://www.youtube.com/embed/s2CMcf-FT2g"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
             </div>
             <div className="video-info">
-              <h5 className="text-[18px] font-semibold pt-3">Holly’s Era 2021</h5>
+              <h5 className="text-[18px] font-semibold pt-3">Before the invention of drips</h5>
             </div>
           </div>
         </div>

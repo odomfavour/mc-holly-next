@@ -2,9 +2,9 @@ import type { NextPage } from "next"
 import Head from "next/head"
 import AboutEvent from "../components/AboutEvent"
 import AboutMc from "../components/AboutMc"
-import Accomodation from "../components/Accomodation"
+import Accommodation from "../components/Accommodation"
 import Banner from "../components/Banner"
-import Gallery from "../components/Gallery"
+// import Gallery from "../components/Gallery"
 import PageWrapper from "../components/PageWrapper"
 import PerformingArtiste from "../components/PerformingArtiste"
 import Sponsor from "../components/Sponsor"
@@ -38,7 +38,7 @@ const Home: NextPage = () => {
           <PerformingArtiste/>
           <AboutEvent />
           <AboutMc />
-          <Accomodation />
+          <Accommodation />
           <YoutubeArena/>
           {/* <Gallery /> */}
         </main>

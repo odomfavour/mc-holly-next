@@ -28,7 +28,7 @@ const Footer = () => {
             <Link href="/ticket">Tickets</Link>
           </li>
           <li className="lg:border-r pr-3 border-[#FF8717]">
-            <Link href="/#aboutEvent">About event</Link>
+            <Link href="/#aboutEvent">About the event</Link>
           </li>
           <li className="lg:border-r pr-3 border-[#FF8717]">
             <Link href="/#aboutMC">About MCHolly</Link>
