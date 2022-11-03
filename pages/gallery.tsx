@@ -3,10 +3,10 @@ import { NextPage } from "next"
 import Head from "next/head"
 import { useState } from "react"
 import GallerySlider from "../components/GallerySlider"
+import GalleryTwo from "../components/GalleryTwo"
 import PageWrapper from "../components/PageWrapper"
 
-
-const gallery : NextPage = () =>  {
+const gallery: NextPage = () => {
   const [is2021, setIs2021] = useState(true)
   const [is2022, setIs2022] = useState(false)
   const switchTo22 = () => {
@@ -34,8 +34,8 @@ const gallery : NextPage = () =>  {
             <h3 className="text-[40px] mb-3 font-bold text-center pt-28">
               GALLERY
             </h3>
-            <h5 className="text-center my-28 text-[40px]">Coming Soon</h5>
-            {/* <div className="flex bg-[#F9F9F9] rounded-lg flex-col lg:flex-row">
+            {/* <h5 className="text-center my-28 text-[40px]">Coming Soon</h5> */}
+            <div className="flex bg-[#F9F9F9] rounded-lg flex-col lg:flex-row">
               <div className="w-1/2">
                 <p
                   className={`${
@@ -63,7 +63,8 @@ const gallery : NextPage = () =>  {
                 </p>
               </div>
             </div>
-            {is2021 ? (
+            <GalleryTwo />
+            {/* {is2021 ? (
               <div className="mt-10">
                 <GallerySlider />
               </div>
