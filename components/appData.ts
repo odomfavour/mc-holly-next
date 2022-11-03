@@ -364,3 +364,36 @@ export const artistes = [
     role: 'Comedian'
   },  
 ]
+
+export const featuredVideos = [
+  {
+    id: 1,
+    name: 'Kenny Blaq vs Mercy Chinwo in India',
+    videoId: 'mkFI7E4b90I'
+  },
+  {
+    id: 2,
+    name: 'HOLLYS ERA official monatge',
+    videoId: 'PhTngFUMS3M'
+  },
+  {
+    id: 3,
+    name: 'Before the invention of drips',
+    videoId: 's2CMcf-FT2g'
+  },
+  {
+    id: 4,
+    name: 'Timi Dakolo gave up on us.',
+    videoId: 'i8nCx-SGHlw'
+  },
+  {
+    id: 5,
+    name: 'Holly talks about parenting with his mum on stage',
+    videoId: 'SS7pwMJ-geg'
+  },
+  {
+    id: 6,
+    name: 'Kenny Blaq',
+    videoId: '5kgqMADcUdM'
+  }
+]
