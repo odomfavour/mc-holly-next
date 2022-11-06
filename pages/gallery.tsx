@@ -2,6 +2,7 @@
 import { NextPage } from "next"
 import Head from "next/head"
 import { useState } from "react"
+import GalleryOne from "../components/GalleryOne"
 import GallerySlider from "../components/GallerySlider"
 import GalleryTwo from "../components/GalleryTwo"
 import PageWrapper from "../components/PageWrapper"
@@ -63,16 +64,15 @@ const gallery: NextPage = () => {
                 </p>
               </div>
             </div>
-            <GalleryTwo />
-            {/* {is2021 ? (
+            {is2021 ? (
               <div className="mt-10">
-                <GallerySlider />
+                <GalleryOne />
               </div>
             ) : (
               <div className="mt-10">
-                <GallerySlider />
+                <GalleryTwo />
               </div>
-            )} */}
+            )}
           </div>
         </main>
       </PageWrapper>
