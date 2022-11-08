@@ -1,3 +1,4 @@
+import Link from "next/link"
 import React from "react"
 import { featuredVideos } from "./appData"
 const YoutubeArena = () => {
@@ -35,6 +36,13 @@ const YoutubeArena = () => {
                 </div>
               )
             })}
+          </div>
+          <div className="mt-12 flex justify-center">
+            <a href="https://www.youtube.com/channel/UC8iMTeKb74YUsTmuYKeT5FA" target="_blank">
+              <p className=" border md:px-[64px] md:py-[20px] px-5 py-3 rounded-md border-[#454743] hover:bg-[#2252CC] hover:border-[#2252cc] hover:text-white transition ease-in-out delay-150 cursor-pointer text-[#1F1F1F]">
+                View More
+              </p>
+            </a>
           </div>
         </div>
       </div>

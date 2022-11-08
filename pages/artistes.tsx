@@ -77,7 +77,7 @@ const artiste: NextPage = () => {
                   )
                 })}
               </div>
-              {isClicked && (
+              {/* {isClicked && (
                 <section ref={artisteRef}>
                   {Object.keys(currentArtiste).length !== 0 ? (
                     <div className="bg-[#F9F9F9] rounded-xl p-[40px]">
@@ -142,7 +142,7 @@ const artiste: NextPage = () => {
                     ""
                   )}
                 </section>
-              )}
+              )} */}
               {/* <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8 my-24">
                 {artistes.slice(0, 8).map((artiste) => {
                   // const { id, name, role } = artiste
